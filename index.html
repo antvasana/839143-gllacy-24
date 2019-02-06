@@ -10,7 +10,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/svg-gllacy/logo.svg" width="165" height="79" alt="Логотип магазина Gllacy">
+        <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
         <li><a href="catalog.html" target="_blank">Каталог</a></li>
@@ -18,7 +18,7 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#"><img src="img/svg-gllacy/loupe.svg" width="17" height="17" alt="Вход">Поиск</a></li>
+        <li><a href="#"><img src="img/svg-gllacy/loupe.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
         <li><a href="#"><img src="img/svg-gllacy/entrance.svg" width="21" height="19" alt="Вход">Вход</a></li>
         <li><a href="#"><img src="img/svg-gllacy/basket.svg" width="21" height="20" alt="Корзина">Пусто</a></li>
       </ul>
@@ -28,7 +28,7 @@
   <main>
     <section class="slider">
       <p>Крем-брюле и пломбир с малиновым джемом</p>
-      <button class="main-slider">Кнопка переключает картинки в слайдере</button>
+      <button class="slides-switches">Кнопка переключает картинки в слайдере</button>
       <button class="main-booking">Давайте оба!</button>
     </section>
     <section class="promotion">
@@ -89,7 +89,14 @@
     <section class="subscribe">
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!-- Здесь будет форма.   <button>Отправить</button> -->
+        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <input id="user-mail" placeholder="Электронная почта">
+          </p>
+          <p>
+            <button class="submit">Отправить</button>
+          </p>
+        </form>
     </section>
     <section class="address">
       <address>
@@ -97,16 +104,16 @@
         <b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b>
         Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a>
         (с 10 до 20 ежедневно)
-        <!-- Здесь будет форма.   <a href="#">Форма обратной связи</a> -->
+           <a href="#">Форма обратной связи</a>
       </address>
     </section>
   </main>
   <footer class="main-footer">
-    <div class="socials">
-      <a href="https://twitter.com"><img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="Twitter"></a>
-      <a href="https://www.instagram.com"><img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="Instagram"></a>
-      <a href="https://www.facebook.com"><img src="img/svg-gllacy/fb.svg" width="32" height="32" alt="Facebook"></a>
-      <a href="https://vk.com"><img src="img/svg-gllacy/vk.svg" width="32" height="32" alt="Вконтакте"></a>
+    <div class="social-links">
+      <a href="https://twitter.com" class="social-icon social-icon_twitter" area-label="Глейси в твиттере"><img src="img/svg-gllacy/twitter.svg" width="32" height="32" alt="Twitter"></a>
+      <a href="https://www.instagram.com"class="social-icon social-icon_instagram" area-label="Глейси в инстаграме"><img src="img/svg-gllacy/instagram.svg" width="32" height="32" alt="Instagram"></a>
+      <a href="https://www.facebook.com" class="social-icon social-icon_fb" area-label="Глейси в фейсбуке"><img src="img/svg-gllacy/fb.svg" width="32" height="32" alt="Facebook"></a>
+      <a href="https://vk.com" class="social-icon social-icon_vk" area-label="Глейси во вконтакте"><img src="img/svg-gllacy/vk.svg" width="32" height="32" alt="Вконтакте"></a>
     </div>
     <div class="info">
       <div>
@@ -117,7 +124,7 @@
       </div>
     </div>
     <div class="copyright">
-        <img src="img/svg-gllacy/logo-htmlacademy.svg" width="116" height="40" alt="Логотип HTML-Академии">
+      <img src="img/svg-gllacy/logo-htmlacademy.svg" width="116" height="40" alt="Логотип HTML-Академии">
       <p>Сделано в HTML Academy &copy; 2019</p>
     </div>
   </footer>
