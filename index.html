@@ -7,28 +7,73 @@
 </head>
 
 <body>
+
   <header class="main-header">
+
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html" target="_blank">Каталог</a></li>
+        <li><a href="catalog.html" target="_blank">Каталог</a>
+          <ul class="new-items">
+            <li>
+              <h3>Новинки</h3>
+            </li>
+            <li>Сливочное</li>
+            <li>Щербеты</li>
+            <li>Фруктовый лед</li>
+            <li>Мелорин</li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#" area-label="Поиск">Поиск</a></li>
-        <li><a href="#" area-label="Вход">Вход</a></li>
-        <li><a href="#" area-label="Корзина">Корзина</a></li>
+        <li><a href="#" area-label="Поиск" class="search-navigation">Поиск</a></li>
+        <li><a href="#" area-label="Вход" class="login-navigation">Вход</a></li>
+        <li><a href="#" area-label="Корзина" class="purchase-navigation">Корзина</a></li>
       </ul>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="search-navigation">Поиск</label>
+          <input class="search-navigation-user" id="search-navigation" type="text" name="search-navigation" placeholder="Что ищем?">
+        </p>
+      </form>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
     </nav>
     <p>с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
+
   </header>
-  <main>
+
+  <main class="container">
+
+    <h1 class="visually-hidden">Магазин «Глейси»</h1>
+
     <section class="slider">
       <p>Крем-брюле и пломбир с малиновым джемом</p>
-      <button class="slides-switches">Кнопка переключает картинки в слайдере</button>
+      <button class="slides-switches button-one" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
+      <button class="slides-switches button-two" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
+      <button class="slides-switches button-three" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
       <button class="main-booking">Давайте оба!</button>
     </section>
     <section class="promotion">
@@ -66,20 +111,26 @@
       </div>
     </section>
     <section class="main-about-gllacy-store">
-      <h3>Магазин Глейси - это онлайн- и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-      <ul>
-        <li class="technology">Все наше мороженое изготавливается на собственном производстве, с использованием
-          современного оборудования
-          и проверенных временем технологий.</li>
-        <li class="cooking">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-          Все
-          дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-        <li class="buying">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
-          которыми нас
-          связывает долговременное сотрудничество.</li>
-        <li class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
-          не дает мороженому
-          растаять в пути и позволяет сохранить превосходный вкус.</li>
+      <h3 class="features">Магазин Глейси - это онлайн- и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+      <ul class="features-list">
+        <li class="feature-item">
+          <h3 class="technology" area-label="значок мороженого"></h3>
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием
+             современного оборудования и проверенных временем технологий.</p>
+        </li>
+        <li class="feature-item">
+          <h3 class="cooking" area-label="значок экологически чистого сырья"></h3>
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </li>
+        <li class="feature-item">
+          <h3 class="buying" area-label="значок коровы"></h3>
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
+             которыми нас связывает долговременное сотрудничество.<</p> </li> <li class="feature-item">
+          <h3 class="delivery" area-label="значок термоментра"></h3>
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
+             не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </li>
       </ul>
     </section>
     <article class="news">
@@ -89,7 +140,7 @@
     <section class="subscribe">
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+        <form class="user" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <input id="user-mail" placeholder="Электронная почта">
           </p>
@@ -107,15 +158,18 @@
            <a href="#">Форма обратной связи</a>
       </address>
     </section>
+
   </main>
+
   <footer class="main-footer">
-    <div class="social-links">
+
+    <div class="footer-social">
       <a href="https://twitter.com" class="social-icon social-icon_twitter" area-label="Глейси в твиттере"></a>
       <a href="https://www.instagram.com"class="social-icon social-icon_instagram" area-label="Глейси в инстаграме"></a>
       <a href="https://www.facebook.com" class="social-icon social-icon_fb" area-label="Глейси в фейсбуке"></a>
       <a href="https://vk.com" class="social-icon social-icon_vk" area-label="Глейси во вконтакте"></a>
     </div>
-    <div class="info">
+    <div class="footer-info">
       <div>
         <a href="#">Для поставщиков</a>
         <a href="#">О производстве</a>
@@ -123,11 +177,12 @@
         <a href="#">Экологические стандарты</a>
       </div>
     </div>
-    <div class="copyright">
+    <div class="footer-copyright">
       <img src="img/svg-gllacy/logo-htmlacademy.svg" width="116" height="40" alt="Логотип HTML-Академии">
       <p>Сделано в HTML Academy &copy; 2019</p>
     </div>
   </footer>
+
 </body>
 
 </html>

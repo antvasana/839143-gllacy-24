@@ -9,32 +9,84 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
         <li><a href="catalog.html" class="active" target="_blank">Каталог</a></li>
+          <ul class="new-items">
+            <li>
+              <h3>Новинки</h3>
+            </li>
+            <li>Сливочное</li>
+            <li>Щербеты</li>
+            <li>Фруктовый лед</li>
+            <li>Мелорин</li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#" area-label="Поиск">Поиск</a></li>
-        <li><a href="#" area-label="Вход">Вход</a></li>
-        <li><a href="#" area-label="Корзина">Корзина</a></li>
+        <li><a href="#" area-label="Поиск" class="search-navigation">Поиск</a></li>
+        <li><a href="#" area-label="Вход" class="login-navigation">Вход</a></li>
+        <li><a href="#" area-label="Корзина" class="purchase-navigation">Корзина</a></li>
       </ul>
+      <section class="number-of-orders">
+        <h2 class="visually-hidden">Количество заказанных товаров</h2>
+        <ul class="ordered-goods">
+          <li class="ordered-good">
+            <h3 class="good-one" area-label="карточка заказанного мороженого"></h3>
+            <p>Пломбир с апельсиновым джемом <span class="weight-price">1,5 кг х 200 руб.</span> <span class="unit-price">300 руб.</span></p>
+          </li>
+          <li class="ordered-good">
+            <h3 class="good-two" area-label="карточка заказанного мороженого"></h3>
+            <p>Клубничный пломбир с присыпкой из белого шоколада <span class="weight-price">1,5 кг х 300 руб.</span> <span class="unit-price">450 руб.</span></p>
+          </li>
+        </ul>
+        <p>Итого: 750 руб.</p>
+        <button type="submit">Оформить заказ</button>
+      </section>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="search-navigation">Поиск</label>
+          <input class="search-navigation-user" id="search-navigation" type="text" name="search-navigation"
+            placeholder="Что ищем?">
+        </p>
+      </form>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">
+          Войти
+        </button>
+      </form>
     </nav>
     <p>с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
   </header>
   <main>
     <nav class="breadcrumbs">
       <ul class="page-navigation">
-        <li><a href="index.html">Главная</a></li>
+        <li><a href="index.html" class="page-navigation-active">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Сливочное</a></li>
       </ul>
     </nav>
     <h1>Сливочное мороженое</h1>
-    <form class="filters-section">
+    <form class="filters-section" action="https://echo.htmlacademy.ru" method="post">
       <p class="sorting">
         <label for="sorting">Сортировка:</label>
         <select id="sorting">
@@ -46,23 +98,26 @@
         <input id="price" type="range" name="range" min="100" max="500" step="1">
       </p>
       <p class="fat-content">
-        <label>Жирность:</label>
-        <input type="radio" name="fat-content" value="1">0%
-        <input type="radio" name="fat-content" value="2" checked>до 10%
-        <input type="radio" name="fat-content" value="3">до 30%
-        <input type="radio" name="fat-content" value="4">выше 30%
+        <label>Жирность:
+          <input type="radio" name="fat-content" value="1">0%
+          <input type="radio" name="fat-content" value="2" checked>до 10%
+          <input type="radio" name="fat-content" value="3">до 30%
+          <input type="radio" name="fat-content" value="4">выше 30%
+        </label>
       </p>
       <p class="fillers">
-        <label>Наполнители:</label>
-        <input type="checkbox" name="fillers" value="1">шоколадные
-        <input type="checkbox" name="fillers" value="2" checked>сахарные присыпки
-        <input type="checkbox" name="fillers" value="3">фрукты
-        <input type="checkbox" name="fillers" value="4">сиропы
-        <input type="checkbox" name="fillers" value="5">джемы
+        <label>Наполнители:
+          <input type="checkbox" name="fillers" value="1">шоколадные
+          <input type="checkbox" name="fillers" value="2" checked>сахарные присыпки
+          <input type="checkbox" name="fillers" value="3">фрукты
+          <input type="checkbox" name="fillers" value="4">сиропы
+          <input type="checkbox" name="fillers" value="5">джемы
+        </label>
       </p>
-      <button class="button">Применить</button>
+      <button class="button" type="submit">Применить</button>
     </form>
     <section class="main-ice-cream">
+      <h2 class="visually-hidden">Ассортимент мороженого</h2>
       <div class="ice-cream">
         <img src="img/ice-cream-creamy.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         <p>310 <span>/кг</span></p>
@@ -114,7 +169,7 @@
         <a href="#">Сливочное с ментоловым сиропом</a>
       </div>
       <div class="ice-cream">
-        <img src="img/ice-cream--black-chocolate.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+        <img src="img/ice-cream-black-chocolate.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
         <p>355 <span>/кг</span></p>
         <a href="#">Сливочное с кусочками черного шоколада</a>
       </div>
@@ -124,24 +179,24 @@
         <a href="#">Сливочное с мятным сиропом</a>
       </div>
     </section>
-    <div class="pagination">
+    <div class="pagination-list">
       <ul>
         <li>
           <button>Кнопка переключает на предыдущую страницу</button>
         </li>
-        <li class="active">
+        <li class="pagination-item pagination-item-active">
           <a href="#">1</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">2</a>
         </li>
-        <li>
+        <liclass="pagination-item" >
           <a href="#">3</a>
         </li>
-        <li>
+        <li class="pagination-item">
           <a href="#">4</a>
         </li>
-        <li>
+        <li class="pagination-item" >
           <a href="#">5</a>
         </li>
         <li>
@@ -151,19 +206,19 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="social-links">
+    <div class="footer-social">
       <a href="https://twitter.com" class="social-icon social-icon_twitter" area-label="Глейси в твиттере"></a>
       <a href="https://www.instagram.com"class="social-icon social-icon_instagram" area-label="Глейси в инстаграме"></a>
       <a href="https://www.facebook.com" class="social-icon social-icon_fb" area-label="Глейси в фейсбуке"></a>
       <a href="https://vk.com" class="social-icon social-icon_vk" area-label="Глейси во вконтакте"></a>
     </div>
-    <div class="info">
+    <div class="footer-info">
       <a href="#">Для поставщиков</a>
       <a href="#">О производстве</a>
       <a href="#">Наши документы</a>
       <a href="#">Экологические стандарты</a>
     </div>
-    <div class="copyright">
+    <div class="footer-copyright">
       <img src="img/svg-gllacy/logo-htmlacademy.svg" width="116" height="40" alt="Логотип HTML-Академии">
       <p>Сделано в HTML Academy &copy; 2019</p>
     </div>
