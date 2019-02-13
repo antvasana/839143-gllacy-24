@@ -13,11 +13,9 @@
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html" class="active" target="_blank">Каталог</a></li>
+        <li><a href="catalog.html" class="active">Каталог</a></li>
           <ul class="new-items">
-            <li>
-              <h3>Новинки</h3>
-            </li>
+            <li class="list-new-items">Новинки</li>
             <li>Сливочное</li>
             <li>Щербеты</li>
             <li>Фруктовый лед</li>
@@ -28,23 +26,31 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#" area-label="Поиск" class="search-navigation">Поиск</a></li>
-        <li><a href="#" area-label="Вход" class="login-navigation">Вход</a></li>
-        <li><a href="#" area-label="Корзина" class="purchase-navigation">Корзина</a></li>
+        <li><a href="#" aria-label="Поиск" class="search-navigation">Поиск</a></li>
+        <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
+        <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
       </ul>
-      <section class="number-of-orders">
+      <section class="enumeration-of-orders">
         <h2 class="visually-hidden">Количество заказанных товаров</h2>
-        <ul class="ordered-goods">
-          <li class="ordered-good">
-            <h3 class="good-one" area-label="карточка заказанного мороженого"></h3>
-            <p>Пломбир с апельсиновым джемом <span class="weight-price">1,5 кг х 200 руб.</span> <span class="unit-price">300 руб.</span></p>
-          </li>
-          <li class="ordered-good">
-            <h3 class="good-two" area-label="карточка заказанного мороженого"></h3>
-            <p>Клубничный пломбир с присыпкой из белого шоколада <span class="weight-price">1,5 кг х 300 руб.</span> <span class="unit-price">450 руб.</span></p>
-          </li>
-        </ul>
-        <p>Итого: 750 руб.</p>
+        <table class="ordered-goods">
+          <tr>
+            <td class="delete">x</td>
+            <td class="ice-cream-icon"></td>
+            <td class="ice-cream-description">Пломбир с апельсиновым джемом</td>
+            <td class="weight-price">1,5 кг х 200 руб.</td>
+            <td class="unit-price">300 руб.</td>
+          </tr>
+          <tr>
+            <td class="delete">x</td>
+            <td class="ice-cream-icon"></td>
+            <td class="ice-cream-description">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="weight-price">1,5 кг х 300 руб.</td>
+            <td class="unit-price">450 руб.</td>
+          </tr>
+          <tr>
+            <td colspan="4" class="total-price">Итого: 750 руб.</td>
+          </tr>
+        </table>
         <button type="submit">Оформить заказ</button>
       </section>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -70,9 +76,6 @@
           <a class="restore" href="#">Забыли пароль?</a>
           <a class="new-registration" href="#">Новая регистрация</a>
         </p>
-        <button class="button" type="submit">
-          Войти
-        </button>
       </form>
     </nav>
     <p>с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
@@ -207,10 +210,10 @@
   </main>
   <footer class="main-footer">
     <div class="footer-social">
-      <a href="https://twitter.com" class="social-icon social-icon_twitter" area-label="Глейси в твиттере"></a>
-      <a href="https://www.instagram.com"class="social-icon social-icon_instagram" area-label="Глейси в инстаграме"></a>
-      <a href="https://www.facebook.com" class="social-icon social-icon_fb" area-label="Глейси в фейсбуке"></a>
-      <a href="https://vk.com" class="social-icon social-icon_vk" area-label="Глейси во вконтакте"></a>
+      <a href="https://twitter.com" class="social-icon social-icon_twitter" aria-label="Глейси в твиттере"></a>
+      <a href="https://www.instagram.com"class="social-icon social-icon_instagram" aria-label="Глейси в инстаграме"></a>
+      <a href="https://www.facebook.com" class="social-icon social-icon_fb" aria-label="Глейси в фейсбуке"></a>
+      <a href="https://vk.com" class="social-icon social-icon_vk" aria-label="Глейси во вконтакте"></a>
     </div>
     <div class="footer-info">
       <a href="#">Для поставщиков</a>

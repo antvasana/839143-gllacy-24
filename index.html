@@ -15,7 +15,7 @@
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html" target="_blank">Каталог</a>
+        <li><a href="catalog.html">Каталог</a>
           <ul class="new-items">
             <li>
               <h3>Новинки</h3>
@@ -30,14 +30,15 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a href="#" area-label="Поиск" class="search-navigation">Поиск</a></li>
-        <li><a href="#" area-label="Вход" class="login-navigation">Вход</a></li>
-        <li><a href="#" area-label="Корзина" class="purchase-navigation">Корзина</a></li>
+        <li><a href="#" aria-label="Поиск" class="search-navigation">Поиск</a></li>
+        <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
+        <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
       </ul>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="visually-hidden" for="search-navigation">Поиск</label>
-          <input class="search-navigation-user" id="search-navigation" type="text" name="search-navigation" placeholder="Что ищем?">
+          <input class="search-navigation-user" id="search-navigation" type="text" name="search-navigation"
+            placeholder="Что ищем?">
         </p>
       </form>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -56,9 +57,6 @@
           <a class="restore" href="#">Забыли пароль?</a>
           <a class="new-registration" href="#">Новая регистрация</a>
         </p>
-        <button class="button" type="submit">
-          Войти
-        </button>
       </form>
     </nav>
     <p>с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
@@ -69,11 +67,34 @@
 
     <h1 class="visually-hidden">Магазин «Глейси»</h1>
 
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>Мы обязательно вам ответим!</p>
+      <p>
+        <label class="visually-hidden" for="your-name">Имя</label>
+        <input class="login-name-user" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <label class="visually-hidden" for="your-email">Имя</label>
+        <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <label class="visually-hidden">Имя
+          <textarea placeholder="Напишите что-нибудь..."></textarea>
+        </label>
+      </p>
+      <button class="button" type="submit">
+        Отправить
+      </button>
+    </form>
+
     <section class="slider">
       <p>Крем-брюле и пломбир с малиновым джемом</p>
-      <button class="slides-switches button-one" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
-      <button class="slides-switches button-two" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
-      <button class="slides-switches button-three" type="button" area-label="Кнопка переключает картинки в слайдере"></button>
+      <button class="slides-switches button-one" type="button"
+        aria-label="Кнопка переключает картинки в слайдере"></button>
+      <button class="slides-switches button-two" type="button"
+        aria-label="Кнопка переключает картинки в слайдере"></button>
+      <button class="slides-switches button-three" type="button"
+        aria-label="Кнопка переключает картинки в слайдере"></button>
       <button class="main-booking">Давайте оба!</button>
     </section>
     <section class="promotion">
@@ -84,13 +105,15 @@
       </div>
       <div class="promotion-chocolate">
         <h2>Шоколадки даром!</h2>
-        <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <p>При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        </p>
         <a href="#">Хочу шоколадки!</a>
-      </div> vvvvv
+      </div>
     </section>
     <section class="best-choice">
       <div class="ice-cream">
-          <img src="img/ice-cream-creamy.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        <img src="img/ice-cream-creamy.png" width="267" height="267"
+          alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         <p>310 <span>/кг</span></p>
         <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </div>
@@ -100,36 +123,41 @@
         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
       </div>
       <div class="ice-cream">
-        <img src="img/ice-cream-strawberry.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        <img src="img/ice-cream-strawberry.png" width="267" height="267"
+          alt="Сливочно-клубничное с присыпкой из белого шоколада">
         <p>355 <span>/кг</span></p>
         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </div>
       <div class="ice-cream">
-          <img src="img/ice-cream-creme-brulee.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+        <img src="img/ice-cream-creme-brulee.png" width="267" height="267"
+          alt="Сливочное крем-брюле с карамельной подливкой">
         <p>415 <span>/кг</span></p>
         <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
       </div>
     </section>
     <section class="main-about-gllacy-store">
-      <h3 class="features">Магазин Глейси - это онлайн- и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+      <h3 class="features">Магазин Глейси - это онлайн- и офлайн магазин по продаже мороженого собственного производства
+        на развес</h3>
       <ul class="features-list">
         <li class="feature-item">
-          <h3 class="technology" area-label="значок мороженого"></h3>
+          <h3 class="technology"></h3>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием
-             современного оборудования и проверенных временем технологий.</p>
+            современного оборудования и проверенных временем технологий.</p>
         </li>
         <li class="feature-item">
-          <h3 class="cooking" area-label="значок экологически чистого сырья"></h3>
+          <h3 class="cooking"></h3>
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
-             Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+            Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
         <li class="feature-item">
-          <h3 class="buying" area-label="значок коровы"></h3>
+          <h3 class="buying"></h3>
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
-             которыми нас связывает долговременное сотрудничество.<</p> </li> <li class="feature-item">
-          <h3 class="delivery" area-label="значок термоментра"></h3>
+            которыми нас связывает долговременное сотрудничество.</p>
+        </li>
+        <li class="feature-item">
+          <h3 class="delivery"></h3>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
-             не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
     </section>
@@ -140,14 +168,10 @@
     <section class="subscribe">
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="user" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <input id="user-mail" placeholder="Электронная почта">
-          </p>
-          <p>
-            <button class="submit">Отправить</button>
-          </p>
-        </form>
+      <form class="user" action="https://echo.htmlacademy.ru" method="post">
+        <input id="user-mail" placeholder="Электронная почта">
+        <button class="submit">Отправить</button>
+      </form>
     </section>
     <section class="address">
       <address>
@@ -155,7 +179,7 @@
         <b>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</b>
         Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a>
         (с 10 до 20 ежедневно)
-           <a href="#">Форма обратной связи</a>
+        <a href="#">Форма обратной связи</a>
       </address>
     </section>
 
@@ -164,10 +188,11 @@
   <footer class="main-footer">
 
     <div class="footer-social">
-      <a href="https://twitter.com" class="social-icon social-icon_twitter" area-label="Глейси в твиттере"></a>
-      <a href="https://www.instagram.com"class="social-icon social-icon_instagram" area-label="Глейси в инстаграме"></a>
-      <a href="https://www.facebook.com" class="social-icon social-icon_fb" area-label="Глейси в фейсбуке"></a>
-      <a href="https://vk.com" class="social-icon social-icon_vk" area-label="Глейси во вконтакте"></a>
+      <a href="https://twitter.com" class="social-icon social-icon_twitter" aria-label="Глейси в твиттере"></a>
+      <a href="https://www.instagram.com" class="social-icon social-icon_instagram"
+        aria-label="Глейси в инстаграме"></a>
+      <a href="https://www.facebook.com" class="social-icon social-icon_fb" aria-label="Глейси в фейсбуке"></a>
+      <a href="https://vk.com" class="social-icon social-icon_vk" aria-label="Глейси во вконтакте"></a>
     </div>
     <div class="footer-info">
       <div>
