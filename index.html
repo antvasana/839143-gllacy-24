@@ -18,13 +18,13 @@
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a>
+        <li class="catalog"><a href="catalog.html">Каталог</a>
           <ul class="new-items">
             <li class="list-new-items">Новинки</li>
-            <li>Сливочное</li>
-            <li>Щербеты</li>
-            <li>Фруктовый лед</li>
-            <li>Мелорин</li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -76,7 +76,7 @@
         <input class="login-name-user" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
       </p>
       <p>
-        <label class="visually-hidden" for="your-email">Имя</label>
+        <label class="visually-hidden" for="your-email">Почта для ответа</label>
         <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
       </p>
       <p>
@@ -163,18 +163,20 @@
         </li>
       </ul>
     </section>
-    <article class="news">
-      <h3>Новое в нашем блоге</h3>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </article>
-    <section class="subscribe">
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="user" action="https://echo.htmlacademy.ru" method="post">
-        <input id="user-mail" placeholder="Электронная почта">
-        <button class="submit">Отправить</button>
-      </form>
-    </section>
+    <div class="index-columns">
+      <article class="news">
+        <h3>Новое в нашем блоге</h3>
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
+      <section class="subscribe">
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="user" action="https://echo.htmlacademy.ru" method="post">
+          <input id="user-mail" placeholder="Электронная почта">
+          <button class="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
     <section class="address">
       <address>
         Адрес главного офиса и онлайн-магазина:
