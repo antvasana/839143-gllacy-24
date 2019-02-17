@@ -1,0 +1,275 @@
+body, .inner-page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.site-navigation .main-header p {
+  font-family: "Roboto 700", Arial, sans-serif;
+}
+
+.user-navigation {
+  font-family: "Roboto 500", Arial, sans-serif;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation ul {
+  list-style: none;
+}
+
+.main-header a, .breadcrumbs a {
+  color: #ffffff;
+}
+
+.breadcrumbs .page-navigation {
+  list-style: none;
+}
+
+
+/*.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}*/
+
+.site-navigation .catalog > a:hover {
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.catalog .new-items {
+  display: inline-block;
+  border-radius: 5px;
+
+  background-color: #f8f7f4;
+}
+
+.catalog .list-new-items {
+  border-bottom: 1px solid #d1d0ce;
+  padding: 5px;
+  color: #323232;
+}
+
+.new-items a {
+  font-family: "Roboto Regular", Arial, sans-serif;
+  font-weight: normal;
+  color: #323232;
+}
+
+.new-items li {
+  display: block;
+  padding: 5px;
+}
+
+.new-items li:not(:first-child):hover {
+  background-color: #fbded7;
+}
+
+.new-items li:not(:first-child):active {
+  background-color: #f6b5a5;
+}
+
+.best-choice a, .main-ice-cream a {
+  color: #ffffff;
+}
+
+.promotion a {
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Roboto 700", Arial, sans-serif;
+  font-size: inherit;
+
+  color: #ffffff;
+  background-color: #eb5a3d;
+
+
+}
+
+.promotion a:hover, .promotion a:active,
+.best-choice a:hover, .best-choice a:active {
+  color: #ffbc9e;
+}
+
+.main-about-gllacy-store {
+  font-family: "Roboto 400", Arial, sans-serif;
+
+  color: #323232;
+  background-image: url(../img/wafer-pattern.png);
+}
+
+.main-about-gllacy-store .features {
+  font-family: "Roboto 700", Arial, sans-serif;
+  font-size: 24px;
+
+  color: #323232;
+}
+
+.main-about-gllacy-store .features-list {
+  font-family: "Roboto 400", Arial, sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+
+  list-style: none;
+}
+
+.news {
+  font-family: "Roboto 400", Arial, sans-serif;
+  font-size: inherit;
+  font-weight: normal;
+  color: #323232;
+
+  background-image: url(../img/news-background.png);
+  background-repeat: no-repeat;
+
+  width: 555px;
+}
+
+.news a {
+  font-family: "Roboto 700", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.subscribe {
+  width: 560px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+  background-image: url(../img/mail-background.png);
+}
+
+.address a {
+  font-family: "Roboto 700", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.news a:hover, .news a:active,
+.address a:hover, .address a:active {
+  color: #e84d37;
+}
+
+.map {
+  background-image: url(../img/address-background.jpg);
+}
+
+.address {
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+
+  font-family: "Roboto 400", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #323232;
+  background-color: #fefefe;
+}
+
+.address .button {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+
+  font-family: "Roboto 700", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(180deg, #f26843, #e34e3a);
+
+  cursor: pointer;
+}
+
+.pagination-list .pagination {
+  list-style: none;
+}
+
+.pagination a, .pagination .previous-page, .pagination .next-page {
+  color: #ffffff;
+}
+
+.main-footer a {
+  font-family: "Roboto 400", Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-footer a:hover, .main-footer a:active {
+  color: #ffbc9e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

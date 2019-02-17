@@ -4,24 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Gllacy">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a>
-          <ul class="new-items">
-            <li class="list-new-items">Новинки</li>
-            <li>Сливочное</li>
-            <li>Щербеты</li>
-            <li>Фруктовый лед</li>
-            <li>Мелорин</li>
-          </ul>
-        </li>
+        <li class="catalog"><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
@@ -183,9 +178,9 @@
       </div>
     </section>
     <div class="pagination-list">
-      <ul>
+      <ul class="pagination">
         <li>
-          <button>Кнопка переключает на предыдущую страницу</button>
+          <button class="previous-page">Кнопка переключает на предыдущую страницу</button>
         </li>
         <li class="pagination-item pagination-item-active">
           <a href="#">1</a>
@@ -203,7 +198,7 @@
           <a href="#">5</a>
         </li>
         <li>
-          <button>Кнопка переключает на следующую страницу</button>
+          <button class="next-page">Кнопка переключает на следующую страницу</button>
         </li>
       </ul>
     </div>
