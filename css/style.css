@@ -47,14 +47,6 @@ a {
   list-style: none;
 }
 
-
-/*.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-  background-color: #242424;
-}*/
-
 .site-navigation .catalog > a:hover {
   padding: 7px 10px;
   border-radius: 20px;
