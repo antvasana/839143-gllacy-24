@@ -22,20 +22,8 @@ a {
   color: #ffffff;
 }
 
-.site-navigation .main-header p {
-  font-family: "Roboto 700", Arial, sans-serif;
-}
-
-.user-navigation {
-  font-family: "Roboto 500", Arial, sans-serif;
-}
-
 .site-navigation,
 .user-navigation {
-  list-style: none;
-}
-
-.site-navigation ul {
   list-style: none;
 }
 
@@ -45,18 +33,21 @@ a {
 
 .breadcrumbs .page-navigation {
   list-style: none;
+  font-weight: normal;
 }
 
-.site-navigation .catalog > a:hover {
+.catalog > a {
   padding: 7px 10px;
   border-radius: 20px;
-  color: #323232;
+}
 
+.catalog > a:hover {
+  color: #323232;
   background-color: #f7f6f3;
 }
 
 .catalog .new-items {
-  display: inline-block;
+  display: none;
   border-radius: 5px;
 
   background-color: #f8f7f4;
@@ -69,7 +60,6 @@ a {
 }
 
 .new-items a {
-  font-family: "Roboto Regular", Arial, sans-serif;
   font-weight: normal;
   color: #323232;
 }
@@ -87,6 +77,31 @@ a {
   background-color: #f6b5a5;
 }
 
+.search-form {
+  background-color: #f8f7f4;
+  display: none;
+
+  width: 341px;
+}
+
+.login-form {
+  background-color: #f8f7f4;
+  display: none;
+
+  width: 272px;
+}
+
+.call-back-form {
+  background-color: #f8f7f4;
+  display: none;
+
+  width: 474px;
+}
+
+.enumeration-of-orders {
+  display: none;
+}
+
 .best-choice a, .main-ice-cream a {
   color: #ffffff;
 }
@@ -99,44 +114,74 @@ a {
 
   color: #ffffff;
   background-color: #eb5a3d;
-
-
 }
 
-.promotion a:hover, .promotion a:active,
-.best-choice a:hover, .best-choice a:active {
+.promotion a:hover,
+.promotion a:focus,
+.promotion a:active,
+.best-choice a:hover,
+.best-choice a:focus,
+.best-choice a:active {
   color: #ffbc9e;
 }
 
-promotion-raspberry {
+.promotion-raspberry, .promotion-chocolate {
+  background-repeat: no-repeat;
+
+  font-weight: bold;
+}
+
+.promotion-raspberry {
   background-image: url(../img/promotion-raspberry.png);
 }
 
-.main-about-gllacy-store {
-  font-family: "Roboto 400", Arial, sans-serif;
+.promotion-chocolate {
+  background-image: url(../img/promotion-chocolate.png);
+}
 
+.about-gllacy-store {
+  font-size: 16px;
   color: #323232;
   background-image: url(../img/wafer-pattern.png);
 }
 
-.main-about-gllacy-store .features {
-  font-family: "Roboto 700", Arial, sans-serif;
+.about-gllacy-store .features {
   font-size: 24px;
 
   color: #323232;
 }
 
-.main-about-gllacy-store .features-list {
-  font-family: "Roboto 400", Arial, sans-serif;
-  font-size: inherit;
+.about-gllacy-store .features-list {
   font-weight: normal;
 
   list-style: none;
 }
 
+.main-ice-cream {
+  font-size: 45px;
+}
+
+.main-ice-cream .ice-cream-assortment {
+  font-size: 35px;
+}
+
+.main-ice-cream a {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.main-ice-cream a:hover,
+.main-ice-cream a:focus,
+.main-ice-cream a:active {
+  color: #ffbc9e;
+}
+
+.main-ice-cream .weight {
+  font-size: 30px;
+}
+
 .news {
-  font-family: "Roboto 400", Arial, sans-serif;
-  font-size: inherit;
   font-weight: normal;
   color: #323232;
 
@@ -147,7 +192,6 @@ promotion-raspberry {
 }
 
 .news a {
-  font-family: "Roboto 700", Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #323232;
@@ -159,23 +203,35 @@ promotion-raspberry {
   color: #323232;
 
   background-color: #f8f7f4;
-  background-image: url(../img/mail-background.png);
+
+  width: 548px;
+}
+
+.mail-background {
+  background-image: url(../img/mail-background.jpg);
+  background-repeat: repeat;
+
+  width: 562px;
+}
+
+.map {
+  background-image: url(../img/map-background.jpg);
+  background-repeat: no-repeat;
 }
 
 .address a {
-  font-family: "Roboto 700", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #323232;
 }
 
-.news a:hover, .news a:active,
-.address a:hover, .address a:active {
+.news a:hover,
+.news a:focus,
+.news a:active,
+.address a:hover,
+.address a:focus,
+.address a:active {
   color: #e84d37;
-}
-
-.map {
-  background-image: url(../img/address-background.jpg);
 }
 
 .address {
@@ -183,7 +239,6 @@ promotion-raspberry {
   padding: 20px;
   width: 300px;
 
-  font-family: "Roboto 400", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: #323232;
@@ -195,7 +250,6 @@ promotion-raspberry {
   border: none;
   border-radius: 20px;
 
-  font-family: "Roboto 700", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
@@ -213,13 +267,14 @@ promotion-raspberry {
 }
 
 .main-footer a {
-  font-family: "Roboto 400", Arial, sans-serif;
   font-weight: normal;
   color: #ffffff;
   text-decoration: underline;
 }
 
-.main-footer a:hover, .main-footer a:active {
+.main-footer a:hover,
+.main-footer a:focus,
+.main-footer a:active {
   color: #ffbc9e;
 }
 
