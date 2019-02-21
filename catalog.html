@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог</title>
+  <meta name="format-detection" content="telephone=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -38,14 +39,14 @@
         <h2 class="visually-hidden">Количество заказанных товаров</h2>
         <table class="ordered-goods">
           <tr>
-            <td class="delete">x</td>
+            <td class="delete">удалить товар из корзины</td>
             <td class="ice-cream-icon"></td>
             <td class="ice-cream-description">Пломбир с апельсиновым джемом</td>
             <td class="weight-price">1,5 кг х 200 руб.</td>
             <td class="unit-price">300 руб.</td>
           </tr>
           <tr>
-            <td class="delete">x</td>
+            <td class="delete">удалить товар из корзины</td>
             <td class="ice-cream-icon"></td>
             <td class="ice-cream-description">Клубничный пломбир с присыпкой из белого шоколада</td>
             <td class="weight-price">1,5 кг х 300 руб.</td>
@@ -106,16 +107,19 @@
       </p>
       <p class="price">
         <label for="price">Цена: 100 руб. - 500 руб.</label>
-        <input id="price" type="range" name="range" min="100" max="500" step="1">
+        <input type="range" id="price" name="range" min="100" max="500" step="1">
       </p>
-      <p class="fat-content">
-        <label>Жирность:
-          <input type="radio" name="fat-content" value="1">0%
-          <input type="radio" name="fat-content" value="2" checked>до 10%
-          <input type="radio" name="fat-content" value="3">до 30%
-          <input type="radio" name="fat-content" value="4">выше 30%
-        </label>
-      </p>
+      <div class="fat-content">
+          <p>Жирность:</p>
+            <input type="radio" id="fat-content-0" name="fat-content" value="fat-content-0">
+            <label for="fat-content-0">0%</label>
+            <input type="radio" id="fat-content-under-10" name="fat-content" value="fat-content-under-10" checked>
+            <label for="fat-content-10">до 10%</label>
+            <input type="radio" id="fat-content-under-30" name="fat-content" value="fat-content-under-30">
+            <label for="fat-content-under-30">до 30%</label>
+            <input type="radio" id="fat-content-up-30" name="fat-content" value="fat-content-up-30">
+            <label for="fat-content-up-30">выше 30%</label>
+      </div>
       <p class="fillers">
         <label>Наполнители:
           <input type="checkbox" name="fillers" value="1">шоколадные
@@ -193,7 +197,7 @@
     <div class="pagination-list">
       <ul class="pagination">
         <li>
-          <button class="previous-page">Кнопка переключает на предыдущую страницу</button>
+          <a class="previous-page" href="#"></a>
         </li>
         <li class="pagination-item pagination-item-active">
           <a href="#">1</a>
@@ -211,7 +215,7 @@
           <a href="#">5</a>
         </li>
         <li>
-          <button class="next-page">Кнопка переключает на следующую страницу</button>
+            <a class="next-page" href="#"></a>
         </li>
       </ul>
     </div>
