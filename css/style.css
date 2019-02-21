@@ -3,7 +3,7 @@ body, .inner-page {
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -17,14 +17,24 @@ a {
 }
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 24px;
+  font-weight: bold;
+  line-height: 18px;
   color: #ffffff;
 }
 
 .site-navigation,
 .user-navigation {
   list-style: none;
+}
+.schedule a {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.schedule a:hover,
+.schedule a:focus,
+.schedule a:active {
+  color: #ffbc9e;
 }
 
 .main-header a, .breadcrumbs a {
@@ -33,7 +43,26 @@ a {
 
 .breadcrumbs .page-navigation {
   list-style: none;
+  line-height: 16px;
   font-weight: normal;
+}
+
+.page-navigation a {
+  text-decoration: underline;
+}
+.page-navigation a:hover,
+.page-navigation a:focus,
+.page-navigation a:active {
+  color: #ffbc9e;
+}
+
+
+.site-navigation .active > a {
+  padding: 7px 10px;
+  border-radius: 20px;
+
+  color: #ffffff;
+  background-color: #d07058;
 }
 
 .catalog > a {
@@ -41,7 +70,34 @@ a {
   border-radius: 20px;
 }
 
+.catalog > a:active {
+  color: #323232;
+  background-color: #f7f6f3;
+
+  box-shadow: inset 0 1px 1px 1px #8a8a8a;
+}
+
 .catalog > a:hover {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.delivery-payment a {
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+
+.delivery-payment a:hover {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.about-company a {
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+
+.about-company a:hover {
   color: #323232;
   background-color: #f7f6f3;
 }
@@ -98,37 +154,40 @@ a {
   width: 474px;
 }
 
-.enumeration-of-orders {
-  display: none;
-}
+.main-booking {
+  padding: 17px 43px 16px 41px;
 
-.best-choice a, .main-ice-cream a {
-  color: #ffffff;
-}
-
-.promotion a {
-  padding: 10px;
-  border-radius: 15px;
-  font-family: "Roboto 700", Arial, sans-serif;
-  font-size: inherit;
-
-  color: #ffffff;
-  background-color: #eb5a3d;
-}
-
-.promotion a:hover,
-.promotion a:focus,
-.promotion a:active,
-.best-choice a:hover,
-.best-choice a:focus,
-.best-choice a:active {
-  color: #ffbc9e;
-}
-
-.promotion-raspberry, .promotion-chocolate {
-  background-repeat: no-repeat;
-
+  font-size: 32px;
+  line-height: 44px;
   font-weight: bold;
+  color: #ffffff;
+
+  box-shadow: 0px 2px 2px 0 rgba(158, 67, 52, 0.64);
+  background-image: linear-gradient(to top, #e94f37, #f26743);
+  border: none;
+  border-radius: 35px;
+
+  cursor: pointer;
+}
+
+.main-booking:hover {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #ed705e, #f48569);
+}
+
+.main-booking:active {
+  box-shadow: inset 0px 2px 2px 0 rgba(149, 39, 24, 0.46);
+  background-image: linear-gradient(to top, #e0603e, #d84732);
+}
+
+.promotion .promotion-raspberry, .promotion .promotion-chocolate {
+  border-radius: 15px;
+  font-weight: bold;
+
+  width: 560px;
+  height: 229px;
+
+  background-repeat: no-repeat;
 }
 
 .promotion-raspberry {
@@ -139,49 +198,173 @@ a {
   background-image: url(../img/promotion-chocolate.png);
 }
 
+.promotion .raspberry-free, .promotion .chocolate-free {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.promotion .raspberry-free {
+  padding-top: 23px;
+  padding-right: 260px;
+  padding-left: 20px;
+}
+
+.promotion .chocolate-free {
+  padding-top: 23px;
+  padding-right: 220px;
+  padding-left: 20px;
+}
+
+.promotion .special-offer {
+  margin-bottom: 40px;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+promotion-raspberry .special-offer {
+  margin-top: 0;
+}
+
+.promotion a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74d37, #f06542);
+  border-radius: 25px;
+}
+
+.promotion-raspberry a {
+  margin-left: 374px;
+  padding: 15px 24px 14px 22px;
+}
+
+.promotion-chocolate a {
+  margin-left: 350px;
+  padding: 14px 22px 14px 21px;
+}
+
+.promotion-raspberry a:hover {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #ed705e, #f48569);
+}
+
+.promotion-raspberry a:active {
+  box-shadow: inset 0px 2px 2px 0 rgba(149, 39, 24, 0.46);
+  background-image: linear-gradient(to top, #e0603e, #d84732);
+}
+
+.promotion-chocolate a:hover {
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #ed705e, #f48569);
+}
+
+.promotion-chocolate a:active {
+  box-shadow: inset 0px 2px 2px 0 rgba(149, 39, 24, 0.46);
+  background-image: linear-gradient(to top, #e0603e, #d84732);
+}
+
+.enumeration-of-orders {
+  display: none;
+}
+
+.best-choice a, .main-ice-cream a {
+  color: #ffffff;
+}
+
+.best-choice a:hover,
+.best-choice a:focus,
+.best-choice a:active {
+   color: #ffbc9e;
+}
+
+.ice-cream-offer {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+
+  text-align: center;
+
+  width: 670px;
+}
+
 .about-gllacy-store {
+  border-radius: 15px;
+  margin: 0 auto;
+
   font-size: 16px;
   color: #323232;
   background-image: url(../img/wafer-pattern.png);
+
+  width: 1200px;
 }
 
 .about-gllacy-store .features {
+  padding-left: 21px;
+  padding-right: 112px;
+  padding-top: 29px;
   font-size: 24px;
+  line-height: 30px;
 
   color: #323232;
 }
 
 .about-gllacy-store .features-list {
+  padding-left: 76px;
+  padding-right: 33px;
+  line-height: 22px;
   font-weight: normal;
 
   list-style: none;
+
+  width: 470px;
 }
 
-.main-ice-cream {
+.best-choice, .main-ice-cream {
   font-size: 45px;
+  line-height: 45px;
 }
 
 .main-ice-cream .ice-cream-assortment {
   font-size: 35px;
+  line-height: 35px;
 }
 
-.main-ice-cream a {
+.best-choice .price, .main-ice-cream .price {
+  margin: 0;
+}
+
+.best-choice a, .main-ice-cream a {
   font-size: 16px;
+  line-height: 22px;
+
   font-weight: normal;
   text-decoration: underline;
 }
 
+.best-choice a:hover,
+.best-choice a:focus,
+.best-choice a:active,
 .main-ice-cream a:hover,
 .main-ice-cream a:focus,
 .main-ice-cream a:active {
   color: #ffbc9e;
 }
 
-.main-ice-cream .weight {
+.best-choice .weight, .main-ice-cream .weight {
   font-size: 30px;
 }
 
 .news {
+  border-radius: 15px;
+
   font-weight: normal;
   color: #323232;
 
@@ -189,40 +372,84 @@ a {
   background-repeat: no-repeat;
 
   width: 555px;
+  height: 220px;
+}
+
+.news .news-title {
+  padding-left: 20px;
+  padding-top: 26px;
+
+  line-height: 22px;
 }
 
 .news a {
+  padding-left: 19px;
+  padding-right: 250px;
+
+  display: inline-block;
+
   font-size: 24px;
+  line-height: 30px;
   font-weight: bold;
   color: #323232;
   text-decoration: underline;
+
+}
+
+.mail-background {
+  padding: 2px 5px;
 }
 
 .subscribe {
-  width: 560px;
-  color: #323232;
+  line-height: 22px;
+  font-weight: normal;
 
+  color: #5a5a5a;
   background-color: #f8f7f4;
 
-  width: 548px;
+  width: 549px;
+}
+
+.subscribe .call-to-subscribe {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 33px;
+}
+
+.subscribe input[placeholder] {
+  padding: 14px 203px 12px 16px;
+
+  border-radius: 5px;
+  border-color: rgba(178, 178, 178, 0.52);
+  border-style: solid;
+  border-width: 1px;
+  border-right: transparent;
+
+  line-height: 24px;
+
+  background-color: #ffffff;
+  color: #999999;
+}
+
+.subscribe .submit {
+  padding: 13px 19px 12px 19px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  cursor: pointer;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+
+  color: #ffffff;
 }
 
 .mail-background {
   background-image: url(../img/mail-background.jpg);
-  background-repeat: repeat;
 
   width: 562px;
-}
-
-.map {
-  background-image: url(../img/map-background.jpg);
-  background-repeat: no-repeat;
-}
-
-.address a {
-  font-size: 22px;
-  font-weight: bold;
-  color: #323232;
 }
 
 .news a:hover,
@@ -234,26 +461,100 @@ a {
   color: #e84d37;
 }
 
+.map {
+  margin: 0 auto;
+
+  padding-left: 871px;
+  padding-right: 27px;
+  padding-top: 61px;
+  padding-bottom: 62px;
+
+  background-image: url(../img/map-background.jpg);
+  background-repeat: no-repeat;
+}
+
 .address {
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
+  border-radius: 12px;
 
   font-style: normal;
   font-weight: normal;
   color: #323232;
-  background-color: #fefefe;
+  background-color: #ffffff;
+
+  width: 302px;
+}
+
+.address-announcement {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 129px;
+  padding-top: 30px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.address-office {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 55px;
+  padding-top: 9px;
+
+  display: inline-block;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.order-phone {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 104px;
+  padding-top: 17px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.phone-schedule {
+  margin: 0;
+  padding-left: 25px;
+  padding-right: 124px;
+  padding-top: 12px;
+
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.phone-schedule a {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.phone-schedule a:hover,
+.phone-schedule a:focus,
+.phone-schedule a:active {
+  color: #e84d37;
 }
 
 .address .button {
-  padding: 10px;
+  margin-left: 25px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  padding: 13px 28px;
   border: none;
   border-radius: 20px;
 
   font-size: 18px;
+  line-height: 24px;
   font-weight: bold;
   color: #ffffff;
-  background: linear-gradient(180deg, #f26843, #e34e3a);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+
+  background-image: linear-gradient(to top, #e74a35, #f26843);
 
   cursor: pointer;
 }
@@ -263,8 +564,30 @@ a {
 }
 
 .pagination a, .pagination .previous-page, .pagination .next-page {
+  display: inline-block;
+  padding-top: 4px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
   color: #ffffff;
 }
+
+.pagination a {
+  width: 27px;
+  height: 22px;
+
+  border-radius: 50%;
+}
+
+.pagination-item-active a, .pagination a:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+/*.pagination .previous-page {
+  background-image: url(../img/svg-gllacy/icon-right-small.svg);
+}*/
 
 .main-footer a {
   font-weight: normal;
@@ -276,6 +599,21 @@ a {
 .main-footer a:focus,
 .main-footer a:active {
   color: #ffbc9e;
+}
+
+.footer-info {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-info a:nth-child(1) {
+  font-weight: bold;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: #fefefe;
 }
 
 
