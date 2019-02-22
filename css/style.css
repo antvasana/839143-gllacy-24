@@ -196,6 +196,15 @@ a {
   background-image: linear-gradient(to top, #e0603e, #d84732);
 }
 
+.filters-section {
+  line-height: 18px;
+}
+
+.filters-section .sorting, .filters-section .price, .filters-section .fat-content, .filters-section .fillers {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .promotion .promotion-raspberry, .promotion .promotion-chocolate {
   border-radius: 15px;
   font-weight: bold;
