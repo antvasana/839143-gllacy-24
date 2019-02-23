@@ -630,6 +630,9 @@ promotion-raspberry .special-offer {
   line-height: 18px;
   color: #fefefe;
 }
+div, section, article, a, ul, li, p, footer, header {
+  outline: 1px solid red;
+  }
 
 
 
