@@ -86,7 +86,7 @@
     <p class="schedule">с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
   </header>
 
-  <main>
+  <main class="container">
     <nav class="breadcrumbs">
       <ul class="page-navigation">
         <li><a href="index.html" class="page-navigation-active">Главная</a></li>
@@ -114,24 +114,27 @@
       </fieldset>
       <fieldset class="fieldset-fat-content">
         <legend class="fat-content">Жирность:</legend>
-          <input type="radio" id="fat-content-0" name="fat-content" value="fat-content-0">
-          <label for="fat-content-0">0%</label>
-          <input type="radio" id="fat-content-under-10" name="fat-content" value="fat-content-under-10" checked>
-          <label for="fat-content-under-10">до 10%</label>
-          <input type="radio" id="fat-content-under-30" name="fat-content" value="fat-content-under-30">
-          <label for="fat-content-under-30">до 30%</label>
-          <input type="radio" id="fat-content-up-30" name="fat-content" value="fat-content-up-30">
-          <label for="fat-content-up-30">выше 30%</label>
+        <input type="radio" id="fat-content-0" name="fat-content" value="fat-content-0">
+        <label for="fat-content-0">0%</label>
+        <input type="radio" id="fat-content-under-10" name="fat-content" value="fat-content-under-10" checked>
+        <label for="fat-content-under-10">до 10%</label>
+        <input type="radio" id="fat-content-under-30" name="fat-content" value="fat-content-under-30">
+        <label for="fat-content-under-30">до 30%</label>
+        <input type="radio" id="fat-content-up-30" name="fat-content" value="fat-content-up-30">
+        <label for="fat-content-up-30">выше 30%</label>
       </fieldset>
       <fieldset class="fieldset-fillers">
-          <legend class="fillers">Наполнители:</legend>
-            <label>
-              <input type="checkbox" name="fillers" value="1">шоколадные
-              <input type="checkbox" name="fillers" value="2" checked>сахарные присыпки
-              <input type="checkbox" name="fillers" value="3">фрукты
-              <input type="checkbox" name="fillers" value="4">сиропы
-              <input type="checkbox" name="fillers" value="5">джемы
-            </label>
+        <legend class="fillers">Наполнители:</legend>
+        <input type="checkbox" id="chololate" name="fillers" value="chocolate">
+        <label for="chololate">шоколадные</label>
+        <input type="checkbox" id="sugar-powders" name="fillers" value="sugar-powders" checked>
+        <label for="sugar-powders">сахарные присыпки</label>
+        <input type="checkbox" id="fruits" name="fillers" value="fruits">
+        <label for="fruits">фрукты</label>
+        <input type="checkbox" id="syrups" name="fillers" value="syrups">
+        <label for="syrups">сиропы</label>
+        <input type="checkbox" id="jams" name="fillers" value="jams">
+        <label for="jams">джемы</label>
       </fieldset>
 
       <button class="button" type="submit">Применить</button>

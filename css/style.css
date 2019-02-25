@@ -8,7 +8,6 @@ body, .inner-page {
   font-weight: 500;
   color: #ffffff;
 
-
   background-color: #849d8f;
 }
 
@@ -16,7 +15,15 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  margin: 9px 27px 0;
+
+}
+
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+
   line-height: 18px;
   color: #ffffff;
 }
@@ -27,15 +34,26 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+
   font-weight: bold;
 }
 
 .user-navigation {
+  display: flex;
+  justify-content: space-between;
+
   font-size: 14px;
   line-height: 16px;
 }
 
 .schedule {
+  display: flex;
+  flex-direction: column;
+  width: 166px;
+  margin-left: 1129px;
+
   font-size: 14px;
   line-height: 16px;
 }
@@ -51,7 +69,7 @@ a {
   color: #ffbc9e;
 }
 
-.main-header a, .breadcrumbs a {
+.main-header a {
   color: #ffffff;
 }
 
@@ -61,6 +79,10 @@ a {
   font-weight: normal;
   list-style: none;
   line-height: 14px;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
 }
 
 .page-navigation a {
@@ -196,14 +218,39 @@ a {
   background-image: linear-gradient(to top, #e0603e, #d84732);
 }
 
+.container {
+  margin: 0 27px;
+}
+
 .filters-section {
   line-height: 18px;
+}
+
+.filters-section .fieldset-sorting, .filters-section .fieldset-price, .filters-section .fieldset-fat-content, .filters-section .fieldset-fillers {
+  padding: 0;
 }
 
 .filters-section .sorting, .filters-section .price, .filters-section .fat-content, .filters-section .fillers {
   font-size: 14px;
   line-height: 16px;
 }
+
+.filters-section .fieldset-sorting {
+  width: 130px;
+}
+
+.filters-section .fieldset-price {
+  width: 220px;
+}
+
+.filters-section .fieldset-fat-content {
+  width: 415px;
+}
+
+.filters-section .fieldset-fillers {
+  width: 703px;
+}
+
 
 .promotion .promotion-raspberry, .promotion .promotion-chocolate {
   border-radius: 15px;
@@ -307,6 +354,8 @@ promotion-raspberry .special-offer {
 }
 
 .ice-cream-offer {
+  margin: 0 auto;
+
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
@@ -602,6 +651,10 @@ promotion-raspberry .special-offer {
   height: 12px;
 
   background: url("../img/icon-right-small.png") no-repeat;
+}
+
+.main-footer {
+  margin: 0 27px;
 }
 
 .main-footer a {
