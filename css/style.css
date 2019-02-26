@@ -15,6 +15,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {
   margin: 9px 27px 0;
 
@@ -185,6 +196,10 @@ a {
   width: 272px;
 }
 
+.container {
+  margin: 0 27px;
+}
+
 .call-back-form {
   background-color: #f8f7f4;
   display: none;
@@ -192,7 +207,21 @@ a {
   width: 474px;
 }
 
+.ice-cream-offer {
+  margin: 0 auto 26px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+
+  text-align: center;
+
+  width: 670px;
+}
+
 .main-booking {
+  display: block;
+  margin: 0 auto 41px;;
   padding: 17px 0 16px 0;
 
   font-size: 32px;
@@ -216,10 +245,6 @@ a {
 .main-booking:active {
   box-shadow: inset 0px 2px 2px 0 rgba(149, 39, 24, 0.46);
   background-image: linear-gradient(to top, #e0603e, #d84732);
-}
-
-.container {
-  margin: 0 27px;
 }
 
 .filters-section {
@@ -251,14 +276,18 @@ a {
   width: 703px;
 }
 
+.promotion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
 
 .promotion .promotion-raspberry, .promotion .promotion-chocolate {
-  border-radius: 15px;
-  font-weight: bold;
-
   width: 560px;
   height: 229px;
 
+  border-radius: 15px;
+  font-weight: bold;
   background-repeat: no-repeat;
 }
 
@@ -272,7 +301,7 @@ a {
 
 .promotion .raspberry-free, .promotion .chocolate-free {
   padding-bottom: 20px;
-  margin-bottom: 0;
+  margin: 0;
 
   font-size: 35px;
   line-height: 41px;
@@ -343,64 +372,31 @@ promotion-raspberry .special-offer {
   display: none;
 }
 
+.best-choice, .main-ice-cream {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-ice-cream {
+  margin-bottom: 80px;
+}
+
+.best-choice .ice-cream, .main-ice-cream .ice-cream {
+  width: 267px;
+}
+
 .best-choice a, .main-ice-cream a {
+  display: block;
+
   color: #ffffff;
+  text-align: center;
 }
 
 .best-choice a:hover,
 .best-choice a:focus,
 .best-choice a:active {
    color: #ffbc9e;
-}
-
-.ice-cream-offer {
-  margin: 0 auto;
-
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: bold;
-
-  text-align: center;
-
-  width: 670px;
-}
-
-.about-gllacy-store {
-  border-radius: 15px;
-  margin: 0 auto;
-
-  font-size: 16px;
-  color: #323232;
-  background-image: url("../img/wafer-pattern.png");
-
-  width: 1200px;
-}
-
-.about-gllacy-store .features {
-  padding-top: 29px;
-  font-size: 24px;
-  line-height: 30px;
-
-  color: #323232;
-}
-
-.about-gllacy-store .features-list {
-  line-height: 22px;
-  font-weight: normal;
-
-  list-style: none;
-
-  width: 470px;
-}
-
-.best-choice, .main-ice-cream {
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.main-ice-cream .ice-cream-assortment {
-  font-size: 35px;
-  line-height: 35px;
 }
 
 .best-choice .price, .main-ice-cream .price {
@@ -426,6 +422,61 @@ promotion-raspberry .special-offer {
 
 .best-choice .weight, .main-ice-cream .weight {
   font-size: 30px;
+}
+
+.best-choice, .main-ice-cream {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.main-ice-cream .ice-cream-assortment {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.about-gllacy-store {
+  margin: 0 auto;
+
+  font-size: 16px;
+  color: #323232;
+  background-image: url("../img/wafer-pattern.png");
+
+  border-radius: 15px;
+}
+
+.about-gllacy-store .features {
+  padding-top: 29px;
+  padding-left: 21px;
+  width: 1013px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.about-gllacy-store .features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  line-height: 22px;
+  font-weight: normal;
+
+  list-style: none;
+}
+
+.features-list .feature-item:nth-child(2n) {
+  width: 470px;
+}
+
+.features-list .feature-item:nth-child(2n+1) {
+  width: 476px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
 }
 
 .news {
@@ -461,21 +512,29 @@ promotion-raspberry .special-offer {
 }
 
 .mail-background {
-  padding: 2px 0;
+  padding: 5px;
+  width: 56opx;
+
+  border-radius: 10px;
+  background-image: url("../img/mail-background.jpg");
 }
 
 .subscribe {
+  margin: 0 auto 5px;
+  width: 549px;
+
   line-height: 22px;
   font-weight: normal;
 
   color: #5a5a5a;
   background-color: #f8f7f4;
-
-  width: 549px;
+  border-radius: 10px;
 }
 
 .subscribe .call-to-subscribe {
-  padding-top: 33px;
+  margin-top: 3px;
+  margin-bottom: 38px;
+  padding-top: 20px;
 }
 
 .subscribe input[placeholder] {
@@ -494,6 +553,7 @@ promotion-raspberry .special-offer {
 }
 
 .subscribe .submit {
+  margin-bottom: 30px;
   padding: 13px 0 12px 0;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   border: none;
@@ -508,12 +568,6 @@ promotion-raspberry .special-offer {
   color: #ffffff;
 }
 
-.mail-background {
-  background-image: url("../img/mail-background.jpg");
-
-  width: 562px;
-}
-
 .news a:hover,
 .news a:focus,
 .news a:active,
@@ -524,23 +578,25 @@ promotion-raspberry .special-offer {
 }
 
 .map {
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-
   padding: 61px 0 62px 0;
 
   background-image: url("../img/map-background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-color: #849d8f;
 }
 
 .address {
-  border-radius: 12px;
+  margin-left: 871px;
+  width: 302px;
 
   font-style: normal;
   font-weight: normal;
   color: #323232;
   background-color: #ffffff;
-
-  width: 302px;
+  border-radius: 12px;
 }
 
 .address-announcement {
@@ -611,6 +667,8 @@ promotion-raspberry .special-offer {
 }
 
 .pagination-list .pagination {
+  display: flex;
+
   list-style: none;
 }
 
@@ -631,12 +689,22 @@ promotion-raspberry .special-offer {
   border-radius: 50%;
 }
 
-.pagination-item-hover a, .pagination a:active {
+.pagination-item a:hover, .pagination a:active {
   color: #323232;
   background-color: #ffffff;
 }
 
+.pagination-item-active {
+  width: 27px;
+  height: 22px;
+
+  color: #323232;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
 .pagination .previous-page {
+  margin-top: 22px;
   width: 8px;
   height: 12px;
 
@@ -647,6 +715,7 @@ promotion-raspberry .special-offer {
 }
 
 .pagination .next-page {
+  margin-top: 7px;
   width: 8px;
   height: 12px;
 
@@ -654,7 +723,9 @@ promotion-raspberry .special-offer {
 }
 
 .main-footer {
-  margin: 0 27px;
+  display: flex;
+  justify-content: space-between;
+  margin: 37px 27px 31px;
 }
 
 .main-footer a {
@@ -670,12 +741,33 @@ promotion-raspberry .special-offer {
 }
 
 .footer-info {
+  width: 309px;
+
   font-size: 13px;
   line-height: 18px;
 }
 
+.footer-info a {
+  display: inline-block;
+}
+
 .footer-info a:nth-child(1) {
+  margin-right: 32px;
+  margin-bottom: 9px;
+
   font-weight: bold;
+}
+
+.footer-info a:nth-child(2) {
+  margin-bottom: 9px;
+}
+
+.footer-info a:nth-child(3) {
+  margin-right: 44px;
+}
+
+.inner-page .footer-info a:nth-child(3) {
+  margin-right: 37px;
 }
 
 .footer-copyright {
