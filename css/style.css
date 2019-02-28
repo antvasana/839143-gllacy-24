@@ -264,6 +264,9 @@ a {
 }
 
 .filters-section {
+  display: flex;
+  flex-wrap: wrap;
+
   line-height: 18px;
 }
 
@@ -277,7 +280,7 @@ a {
 }
 
 .filters-section .fieldset-sorting {
-  width: 130px;
+  width: 194px;
 }
 
 .filters-section .fieldset-price {
@@ -290,6 +293,10 @@ a {
 
 .filters-section .fieldset-fillers {
   width: 703px;
+}
+
+.filters-section .button {
+  width: 144px;
 }
 
 .promotion {
