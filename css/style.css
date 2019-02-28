@@ -28,7 +28,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 27px;
+  width: 1200px;
 }
 
 .main-navigation {
@@ -93,6 +93,8 @@ a {
 
 .schedule {
   position: absolute;
+  top: 75px;
+  right: 74px;
 
   display: flex;
   flex-direction: column;
@@ -238,7 +240,7 @@ a {
 .main-booking {
   display: block;
   margin: 0 auto 41px;;
-  padding: 17px 0 16px 0;
+  padding: 17px 43px 16px 41px;
 
   font-size: 32px;
   line-height: 44px;
@@ -297,6 +299,8 @@ a {
 
 .filters-section .button {
   width: 144px;
+
+  cursor: pointer;
 }
 
 .promotion {
@@ -317,6 +321,7 @@ a {
 }
 
 .promotion-raspberry {
+
   background-image: url("../img/promotion-raspberry.png");
 }
 
@@ -325,7 +330,6 @@ a {
 }
 
 .promotion .raspberry-free, .promotion .chocolate-free {
-  padding-bottom: 20px;
   margin: 0;
 
   font-size: 35px;
@@ -334,23 +338,27 @@ a {
 }
 
 .promotion .raspberry-free {
-  padding-top: 23px;
+  padding: 23px 267px 20px 20px;
 }
 
 .promotion .chocolate-free {
-  padding-top: 23px;
+  padding: 23px 223px 19px 20px;
 }
 
 .promotion .special-offer {
-  margin-bottom: 40px;
-  margin-top: 0;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
 
-promotion-raspberry .special-offer {
-  margin-top: 0;
+.promotion-raspberry .special-offer {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.promotion-chocolate .special-offer {
+  padding-left: 20px;
+  padding-right: 27px;
 }
 
 .promotion a {
@@ -367,11 +375,15 @@ promotion-raspberry .special-offer {
 }
 
 .promotion-raspberry a {
-  padding: 15px 0 14px 0;
+  margin-right: 21px;
+  margin-bottom: 23px;
+  padding: 15px 24px 14px 22px;
 }
 
 .promotion-chocolate a {
-  padding: 14px 0 14px 0;
+  margin-right: 21px;
+  margin-bottom: 24px;
+  padding: 14px 22px 14px 21px;
 }
 
 .promotion-raspberry a:hover, .promotion-chocolate a:hover {
@@ -399,11 +411,8 @@ promotion-raspberry .special-offer {
 }
 
 .best-choice .ice-cream, .main-ice-cream .ice-cream {
-  margin-right: 26px;
   width: 267px;
 }
-
-
 
 .best-choice a, .main-ice-cream a {
   display: block;
@@ -494,7 +503,7 @@ promotion-raspberry .special-offer {
 
 .index-columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 39px;
 }
 
