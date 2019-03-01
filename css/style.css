@@ -94,7 +94,7 @@ a {
 .schedule {
   position: absolute;
   top: 75px;
-  right: 74px;
+  right: 27px;
 
   display: flex;
   flex-direction: column;
@@ -305,7 +305,7 @@ a {
 
 .promotion {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 40px;
 }
 
@@ -346,18 +346,18 @@ a {
 }
 
 .promotion .special-offer {
+  padding-left: 20px;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
 
 .promotion-raspberry .special-offer {
-  padding-left: 20px;
   padding-right: 30px;
 }
 
 .promotion-chocolate .special-offer {
-  padding-left: 20px;
   padding-right: 27px;
 }
 
@@ -376,13 +376,11 @@ a {
 
 .promotion-raspberry a {
   margin-right: 21px;
-  margin-bottom: 23px;
   padding: 15px 24px 14px 22px;
 }
 
 .promotion-chocolate a {
   margin-right: 21px;
-  margin-bottom: 24px;
   padding: 14px 22px 14px 21px;
 }
 
@@ -402,6 +400,7 @@ a {
 
 .best-choice, .main-ice-cream {
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -464,6 +463,8 @@ a {
 
 .about-gllacy-store {
   margin: 0 auto;
+
+  width: 1146px;
 
   font-size: 16px;
   color: #323232;
