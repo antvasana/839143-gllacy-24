@@ -305,7 +305,7 @@ a {
 
 .promotion {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
@@ -464,7 +464,7 @@ a {
 .about-gllacy-store {
   margin: 0 auto;
 
-  width: 1146px;
+
 
   font-size: 16px;
   color: #323232;
@@ -504,7 +504,7 @@ a {
 
 .index-columns {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 39px;
 }
 
