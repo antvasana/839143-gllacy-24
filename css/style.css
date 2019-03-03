@@ -7,12 +7,18 @@ body, .inner-page {
   line-height: 24px;
   font-weight: 500;
   color: #ffffff;
-
   background-color: #849d8f;
+  box-sizing: border-box;
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -31,6 +37,10 @@ a {
   width: 1200px;
 }
 
+.main-header {
+  position: relative;
+}
+
 .main-navigation {
   display: flex;
   justify-content: space-between;
@@ -46,6 +56,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   font-weight: bold;
@@ -85,7 +96,9 @@ a {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  max-width px;
 
   font-size: 14px;
   line-height: 16px;
@@ -94,7 +107,7 @@ a {
 .schedule {
   position: absolute;
   top: 75px;
-  right: 27px;
+  right: 0;
 
   display: flex;
   flex-direction: column;
@@ -113,10 +126,6 @@ a {
 .schedule a:focus,
 .schedule a:active {
   color: #ffbc9e;
-}
-
-.container a {
-  color: #ffffff;
 }
 
 .breadcrumbs .page-navigation {
