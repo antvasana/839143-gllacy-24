@@ -35,7 +35,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0 27px;
-  width: 1200px;
+  width: 1146px;
 }
 
 .main-header {
@@ -52,19 +52,24 @@ img {
 
 .site-navigation,
 .user-navigation {
+  padding-left: 0;
+
   list-style: none;
 }
 
 .site-navigation {
+  position: absolute;
+  top: 5px;
+  left: 204px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-
 
   font-weight: bold;
 }
 
 .site-navigation > a {
-  display: inline-block;
+  display: block;
 
   padding: 7px 0px;
   border-radius: 20px;
@@ -99,7 +104,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width px;
+  margin-top: 22px;
+  margin-bottom: 0;
 
   font-size: 14px;
   line-height: 16px;
@@ -516,12 +522,11 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 39px;
-
-  box-sizing: border-box;
 }
 
 .news {
-
+  width: 560px;
+  min-height: 220px;
   border-radius: 15px;
 
   font-weight: normal;
@@ -529,9 +534,6 @@ img {
 
   background-image: url("../img/news-background.png");
   background-repeat: repeat;
-
-  width: 580px;
-  min-height: 220px;
 }
 
 .news .news-title {
@@ -554,8 +556,8 @@ img {
 }
 
 .mail-background {
-  padding: 5px;
-  width: 560px;
+  padding: 5px 8px;
+  width: 552px;
 
   border-radius: 10px;
   background-image: url("../img/mail-background.jpg");
@@ -563,7 +565,6 @@ img {
 
 .subscribe {
   margin: 0 auto 5px;
-  width: 560px;
 
   line-height: 22px;
   font-weight: normal;
