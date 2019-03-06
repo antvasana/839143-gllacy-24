@@ -646,22 +646,25 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  display: flex;
-  justify-content: flex-end;
-
-  width: 1146px;
-  max-width: 100%;
   margin: 0 auto;
-  padding: 61px 0 62px 0;
+  max-width: 1200px;
 
   background-image: url("../img/map-background.jpg");
   background-repeat: repeat;
   background-color: #849d8f;
 }
 
+.map .container {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 1146px;
+  margin: 0 auto;
+  padding: 61px 0 62px 0;
+
+}
+
 .address {
-
-
   width: 302px;
 
   font-style: normal;
