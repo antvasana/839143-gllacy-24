@@ -21,13 +21,20 @@ img {
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -68,9 +75,27 @@ img {
   font-weight: bold;
 }
 
-.site-navigation > a {
-  display: block;
+.site-navigation a {
+  padding: 7px 0px;
+  border-radius: 20px;
 
+  text-decoration: underline;
+}
+
+.user-navigation {
+  max-width: 245px;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  /*padding: 25px 20px;*/
+
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.site-navigation > a {
   padding: 7px 0px;
   border-radius: 20px;
 
@@ -621,7 +646,10 @@ img {
 }
 
 .map {
-  width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 1146px;
   max-width: 100%;
   margin: 0 auto;
   padding: 61px 0 62px 0;
@@ -632,7 +660,8 @@ img {
 }
 
 .address {
-  margin-left: 871px;
+
+
   width: 302px;
 
   font-style: normal;
