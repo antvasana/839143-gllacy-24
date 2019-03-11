@@ -880,7 +880,7 @@ input[type="radio"].visually-hidden {
 .map {
   margin: 0 auto;
   margin-bottom: 18px;
-  max-width: 1200px;
+  width: 1200px;
 
   background-image: url("../img/map-background.jpg");
   background-repeat: repeat;
@@ -888,13 +888,44 @@ input[type="radio"].visually-hidden {
 }
 
 .map .container {
+  position: relative;
   display: flex;
   justify-content: flex-end;
 
   width: 1146px;
   margin: 0 auto;
-  padding: 61px 0 62px 0;
+  padding: 61px 0 40px 0;
 
+}
+
+.map .container::before {
+  content: "";
+
+  position: absolute;
+  top: 140px;
+  left: 240px;
+
+  width: 80px;
+  height: 140px;
+
+  background-image: url("../img/svg-gllacy/pin.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.map .container::after {
+  content: "";
+
+  position: absolute;
+  bottom: 150px;
+  left: 280px;
+
+  width: 182px ;
+  height: 110px;
+
+  background-image: url("../img/pin-shadow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .address {
