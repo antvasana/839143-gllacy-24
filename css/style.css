@@ -301,26 +301,6 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.delivery-payment a {
-  padding: 7px 0;
-  border-radius: 20px;
-}
-
-.delivery-payment a:hover {
-  color: #323232;
-  background-color: #f7f6f3;
-}
-
-.about-company a {
-  padding: 7px 0;
-  border-radius: 20px;
-}
-
-.about-company a:hover {
-  color: #323232;
-  background-color: #f7f6f3;
-}
-
 .catalog .new-items {
   display: none;
   border-radius: 5px;
