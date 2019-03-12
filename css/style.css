@@ -638,19 +638,6 @@ input[type="radio"].visually-hidden {
   bottom: 60px;
 }
 
-/*.main-ice-cream .ice-cream:hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  padding: 6px 14px 77px 13px;
-
-  background-color: #f8f7f4;
-
-  opacity: 0.2;
-}*/
-
 .price .weight {
   display: inline-block;
   margin-left: 25px;
@@ -685,6 +672,10 @@ input[type="radio"].visually-hidden {
 
   background-image: linear-gradient(to bottom, #e74a35, #f26843);
   border-radius: 25px;
+}
+
+.ice-cream:hover {
+  z-index: 40;
 }
 
 .ice-cream:hover .quick-review {
