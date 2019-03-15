@@ -301,6 +301,11 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
+.ice-cream-header {
+  font-size: 35px;
+  line-height: 41px;
+}
+
 .catalog .new-items {
   display: none;
   border-radius: 5px;
@@ -636,6 +641,8 @@ input[type="radio"].visually-hidden {
 .ice-cream .price {
   position: absolute;
   bottom: 60px;
+
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price .weight {
@@ -653,7 +660,9 @@ input[type="radio"].visually-hidden {
   width: 293px;
   height: 405px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .quick-review a {
@@ -672,6 +681,7 @@ input[type="radio"].visually-hidden {
 
   background-image: linear-gradient(to bottom, #e74a35, #f26843);
   border-radius: 25px;
+  box-shadow: 0px 2px 2px 0 rgba(158, 67, 52, 0.64);
 }
 
 .ice-cream:hover {
@@ -680,6 +690,10 @@ input[type="radio"].visually-hidden {
 
 .ice-cream:hover .quick-review {
   display: flex;
+}
+
+.ice-cream:hover .quick-review a {
+  color: #ffffff;
 }
 
 .about-gllacy-store {
