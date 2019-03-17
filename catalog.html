@@ -84,7 +84,7 @@
         </p>
       </form>
     </nav>
-    <p class="schedule">с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
+    <p class="schedule"><span class="schedule-hour">с 10 до 20 ежедневно</span> <a href="tel:+78124502525">8 812 450-25-25</a></p>
 
   </header>
 
@@ -92,8 +92,8 @@
 
     <nav class="breadcrumbs">
       <ul class="page-navigation">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
+        <li><a href="index.html">Главная</a><span class="arrow">&raquo;</span></li>
+        <li><a href="#">Каталог</a><span class="arrow">&raquo;</span></li>
         <li class="active"><a href="#">Сливочное</a></li>
       </ul>
     </nav>
@@ -113,7 +113,7 @@
       <fieldset class="fieldset-price">
         <legend class="price">Цена: 100 руб. - 500 руб.</legend>
           <label for="price"></label>
-          <input type="range" id="price" name="range" min="100" max="500" step="1">
+          <input type="range" id="price" class="input-price" name="range" min="100" max="500" step="1">
       </fieldset>
       <fieldset class="fieldset-fat-content">
         <legend class="fat-content">Жирность:</legend>
@@ -128,7 +128,7 @@
       </fieldset>
       <fieldset class="fieldset-fillers">
         <legend class="fillers">Наполнители:</legend>
-        <input type="checkbox" id="chololate" name="fillers" value="chocolate">
+        <input type="checkbox" id="chololate" name="fillers" value="chocolate" checked>
         <label for="chololate">шоколадные</label>
         <input type="checkbox" id="sugar-powders" name="fillers" value="sugar-powders" checked>
         <label for="sugar-powders">сахарные присыпки</label>
