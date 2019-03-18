@@ -467,7 +467,7 @@ input[type="radio"].visually-hidden {
   color: #ffbc9e;
 }
 
-.modal-new-items {
+/*.modal-new-items {
   border-radius: 5px;
 
   background-color: #f8f7f4;
@@ -491,13 +491,13 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.modal-new-items li:not(:first-child):hover {
+.modal-new-items li:not(:first-child) a:hover {
   background-color: #fbded7;
 }
 
-.modal-new-items li:not(:first-child):active {
+.modal-new-items li:not(:first-child) a:active {
   background-color: #f6b5a5;
-}
+}*/
 
 .modal-search {
   background-color: #f8f7f4;
@@ -641,6 +641,7 @@ input[type="radio"].visually-hidden {
 .promotion {
   display: flex;
   justify-content: space-between;
+  margin-top: 41px;
   margin-bottom: 40px;
 }
 
