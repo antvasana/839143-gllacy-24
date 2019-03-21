@@ -5,6 +5,8 @@ body {
 }
 
 body {
+  min-width: 960px;
+
   font-size: 18px;
   line-height: 1.2;
   font-family: Roboto, "Arial", sans-serif;
@@ -1583,21 +1585,18 @@ opacity: 0.5;
   color: #fefefe;
 }
 
-/*div, section, article, a, ul, li, p, footer, header {
-  outline: 1px solid red;
-  }*/
 
-  /* Всплывающая форма */
   .modal {
     color: #323232;
 
     background-color: #f8f7f4;
   }
 
-  .modal-login {
+  .modal-feedback {
     position: fixed;
-    top: 338px;
+    top: 138px;
     left: 50%;
+    z-index: 40;
 
     width: 478;
     min-height: 200px;
@@ -1605,6 +1604,10 @@ opacity: 0.5;
 
     border-radius: 10px;
   }
+
+  /*div, section, article, a, ul, li, p, footer, header {
+  outline: 1px solid red;
+  }*/
 
 
 
