@@ -313,7 +313,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-search-navigation:hover .modal-search {
+.search-navigation:hover .modal-search {
   display: block;
 }
 
