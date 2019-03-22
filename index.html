@@ -44,7 +44,7 @@
           <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
           <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
         </ul>
-        <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+        <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="search-navigation">Поиск</label>
             <input class="search-navigation-user" id="search-navigation" type="text" name="search-navigation"
@@ -108,7 +108,7 @@
 
       <h1 class="visually-hidden">Магазин «Глейси»</h1>
 
-      <form class="modal modal-call-back" action="https://echo.htmlacademy.ru" method="post">
+      <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
         <button class="modal-close" type="button">Закрыть</button>
         <p>Мы обязательно вам ответим!</p>
         <p>
@@ -120,9 +120,8 @@
           <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
-          <label class="visually-hidden">Сообщение клиента
-            <textarea placeholder="Напишите что-нибудь..."></textarea>
-          </label>
+          <label class="visually-hidden" for="your-email">Сообщение клиента</label>
+            <textarea id="your-message" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button" type="submit">
           Отправить
@@ -297,11 +296,6 @@
       </div>
 
     </footer>
-
-    <section class="modal modal-feedback"> Форма обратной связи Форма обратной связи Форма обратной связи Форма обратной
-      связи Форма обратной связи
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
 
   </div>
 
