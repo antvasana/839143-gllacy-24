@@ -191,7 +191,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/svg-gllacy/loupe.svg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 55% 50%;
   border-radius: 50%;
 }
 
@@ -309,16 +309,18 @@ input[type="radio"].visually-hidden {
   width: 341px;
 
   border-radius: 5px;
-
-  opacity: 1;
 }
 
-.search-navigation:hover .modal-search {
+.search-navigation-item {
+  padding-bottom: 20px;
+}
+
+.search-navigation:hover + .modal-search {
   display: block;
 }
 
 .modal-search input[type="search"] {
-  display: block;
+
 
   margin-left: 15px;
   padding-top: 6px;
@@ -343,10 +345,16 @@ input[type="search"]::-moz-placeholder {
 }
 
 .modal-login {
+  content: "";
+
+  position: absolute;
+  top: 53px;
+  right: 34px;
+
   display: none;
   width: 272px;
 
-  background-color: #f8f7f4;
+  border-radius: 5px;
 }
 
 .modal-feedback {

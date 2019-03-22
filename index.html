@@ -39,18 +39,18 @@
           <li class="about-company"><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="#" aria-label="Поиск" class="search-navigation"><span class="visually-hidden">Поиск</span></a>
+          <li class="search-navigation-item"><a href="#" aria-label="Поиск" class="search-navigation"><span class="visually-hidden">Поиск</span></a>
+              <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually-hidden" for="search-navigation">Поиск</label>
+                  <input class="search-navigation-user" id="search-navigation" type="search" name="search-navigation"
+                    placeholder="Что ищем?">
+                </p>
+              </form>
           </li>
           <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
           <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
         </ul>
-        <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="search-navigation">Поиск</label>
-            <input class="search-navigation-user" id="search-navigation" type="search" name="search-navigation"
-              placeholder="Что ищем?">
-          </p>
-        </form>
         <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="modal-email">Электронная почта</label>
