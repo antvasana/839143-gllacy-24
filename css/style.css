@@ -792,7 +792,7 @@ input[type="password"]::-moz-placeholder {
 .sorting-select {
   position: relative;
 
-  padding: 7px 11px 8px 11px;
+  padding: 7px 17px 8px 11px;
 
   line-height: 18px;
 
@@ -801,19 +801,23 @@ input[type="password"]::-moz-placeholder {
   border: none;
   border-radius: 30px;
 
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
   cursor: pointer;
 }
 
 .sorting-select::after {
+  content: "";
+
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 35px;
 
   width: 11px;
   height: 10px;
 
-
-  background-image: url("../img/svg-gllacy/icon-down-dir - Copy.svg");
+  background-image: url("../img/svg-gllacy/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -822,7 +826,7 @@ input[type="password"]::-moz-placeholder {
   color: #323232;
 }
 
-.price {
+.inner-price {
   position: relative;
 
   width: 220px;
