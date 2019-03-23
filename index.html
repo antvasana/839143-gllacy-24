@@ -39,35 +39,40 @@
           <li class="about-company"><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-navigation-item"><a href="#" aria-label="Поиск" class="search-navigation"><span class="visually-hidden">Поиск</span></a>
-              <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label class="visually-hidden" for="search-navigation">Поиск</label>
-                  <input class="search-navigation-user" id="search-navigation" type="search" name="search-navigation"
-                    placeholder="Что ищем?">
-                </p>
-              </form>
+          <li>
+            <a href="#" aria-label="Поиск" class="search-navigation"><span class="visually-hidden">Поиск</span></a>
+            <form class="modal modal-search" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="search-navigation">Поиск</label>
+                <input class="search-navigation-user" id="search-navigation" type="search" name="search-navigation"
+                  placeholder="Что ищем?">
+              </p>
+            </form>
           </li>
-          <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
+          <li>
+            <a href="#" aria-label="Вход" class="login-navigation">Вход</a>
+            <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="modal-email">Электронная почта</label>
+                <input class="login-modal-email" id="modal-email" type="email" name="login" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-modal-password" id="user-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <div class="login-help">
+                <button class="login-button" type="submit">
+                  Войти
+                </button>
+                <p class="login-password-info">
+                  <a class="restore" href="#">Забыли пароль?</a>
+                  <a class="new-registration" href="#">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
+          </li>
           <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
         </ul>
-        <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="modal-email">Электронная почта</label>
-            <input class="login-modal-email" id="modal-email" type="email" name="login" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-          <button class="button" type="submit">
-            Войти
-          </button>
-          <p class="login-password-info">
-            <a class="restore" href="#">Забыли пароль?</a>
-            <a class="new-registration" href="#">Новая регистрация</a>
-          </p>
-        </form>
       </nav>
       <p class="schedule">с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
 
@@ -76,7 +81,6 @@
     <div class="container">
       <section class="slider">
         <div class="slider-controls">
-          <!--блок с управляющими кнопками-->
           <label for="product-1">Первый</label>
           <label for="product-2">Второй</label>
           <label for="product-3">Третий</label>
