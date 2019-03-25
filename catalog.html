@@ -27,31 +27,34 @@
       <ul class="user-navigation">
         <li><a href="#" aria-label="Поиск" class="search-navigation"><span class="visually-hidden">Поиск</span></a></li>
         <li><a href="#" aria-label="Вход" class="login-navigation">Вход</a></li>
-        <li><a href="#" aria-label="Корзина" class="purchase-done-navigation"><span class="visually-hidden">Корзина</span>2 товара</a></li>
+        <li class="modal-purchase-done-navigation">
+          <a href="#" aria-label="Корзина" class="purchase-done-navigation"><span class="visually-hidden">Корзина</span>2 товара</a>
+          <section class="modal modal-enumeration-of-orders">
+            <h2 class="visually-hidden">Количество заказанных товаров</h2>
+            <table class="ordered-goods">
+              <tr class="modal-orange-jam">
+                <td class="modal-delete-1">удалить товар из корзины</td>
+                <td class="ice-cream-description orange-jam">Пломбир с апельсиновым джемом</td>
+                <td class="weight-price-1">1,5 кг х <span class="unit-price">200 руб.</span></td>
+                <td class="total-price-1">300 руб.</td>
+              </tr>
+              <tr class="modal-white-chocolate-powder">
+                <td class="modal-delete-2">удалить товар из корзины</td>
+                <td class="ice-cream-description white-chocolate-powder">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="weight-price-2">1,5 кг х <span class="unit-price">300 руб.</span></td>
+                <td class="total-price-2">450 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="total-price">Итого: 750 руб.</td>
+              </tr>
+            </table>
+            <div class="modal-enumeration-of-orders-button">
+              <button class="modal-orders-button" type="submit">Оформить заказ</button>
+            </div>
+          </section>
+        </li>
       </ul>
-      <section class="enumeration-of-orders">
-        <h2 class="visually-hidden">Количество заказанных товаров</h2>
-        <table class="ordered-goods">
-          <tr>
-            <td class="delete">удалить товар из корзины</td>
-            <td class="ice-cream-icon"></td>
-            <td class="ice-cream-description">Пломбир с апельсиновым джемом</td>
-            <td class="weight-price">1,5 кг х 200 руб.</td>
-            <td class="unit-price">300 руб.</td>
-          </tr>
-          <tr>
-            <td class="delete">удалить товар из корзины</td>
-            <td class="ice-cream-icon"></td>
-            <td class="ice-cream-description">Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td class="weight-price">1,5 кг х 300 руб.</td>
-            <td class="unit-price">450 руб.</td>
-          </tr>
-          <tr>
-            <td colspan="4" class="total-price">Итого: 750 руб.</td>
-          </tr>
-        </table>
-        <button type="submit">Оформить заказ</button>
-      </section>
+
     </nav>
     <p class="schedule"><span class="schedule-hour">с 10 до 20 ежедневно</span> <a href="tel:+78124502525">8 812 450-25-25</a></p>
 
