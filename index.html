@@ -29,7 +29,7 @@
           <li class="catalog"><a href="catalog.html">Каталог</a>
             <ul class="modal modal-list-new-items">
               <li class="title-new-items">Новинки</li>
-              <li><a href="#">Сливочное</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a class="melorin" href="#">Мелорин</a></li>
@@ -71,7 +71,7 @@
               </div>
             </form>
           </li>
-          <li><a href="#" aria-label="Корзина" class="purchase-navigation">Корзина</a></li>
+          <li><a href="#" aria-label="Корзина" class="purchase-navigation">Пусто</a></li>
         </ul>
       </nav>
       <p class="schedule">с 10 до 20 ежедневно <a href="tel:+78124502525">8 812 450-25-25</a></p>
@@ -170,19 +170,19 @@
           на развес</h3>
         <ul class="features-list">
           <li class="feature-item">
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием
+            <p class="technology">Все наше мороженое изготавливается на собственном производстве, с использованием
               современного оборудования и проверенных временем технологий.</p>
           </li>
           <li class="feature-item">
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
+            <p class="buying-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
               которыми нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="feature-item">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+            <p class="products">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
               Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="feature-item">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
+            <p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который
               не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
@@ -213,31 +213,9 @@
           <p class="address-announcement">Адрес главного офиса и онлайн-магазина:</p>
           <p class="address-office">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p class="order-phone">Для заказов по телефону:</p>
-          <p class="phone-schedule"><a href="tel:+78124502525">8 812 450-25-25</a>
-            (с 10 до 20 ежедневно)</p>
-          <button class="button">Форма обратной связи</button>
-
-          <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
-            <button class="modal-close" type="button">Закрыть</button>
-            <h2 class="modal-answer">Мы обязательно вам ответим!</h2>
-            <p>
-              <label class="visually-hidden" for="your-name">Имя</label>
-              <input class="login-name-user" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="your-email">Ваша почта для ответа?</label>
-              <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
-            </p>
-            <p class="modal-feedback-textarea">
-              <label class="visually-hidden" for="your-email">Сообщение клиента</label>
-                <textarea class="modal-textarea" id="your-message" placeholder="Напишите что-нибудь..."></textarea>
-            </p>
-            <div class="modal-feedback-button">
-              <button class="modal-button" type="submit">
-                Отправить
-              </button>
-            </div>
-          </form>
+          <p class="phone-schedule"><a href="tel:+78124502525">8 812 450-25-25</a></p>
+          <p class="hour-schedule">(с 10 до 20 ежедневно)</p>
+          <button class="feedback-button">Форма обратной связи</button>
 
         </address>
       </div>
@@ -305,6 +283,29 @@
     </footer>
 
   </div>
+
+  <!--Форма обратной связи-->
+  <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
+    <button class="modal-close" type="button">Закрыть</button>
+    <h2 class="modal-answer">Мы обязательно вам ответим!</h2>
+    <p>
+      <label class="visually-hidden" for="your-name">Имя</label>
+      <input class="login-name-user" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
+    </p>
+    <p>
+      <label class="visually-hidden" for="your-email">Ваша почта для ответа?</label>
+      <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+    </p>
+    <p class="modal-feedback-textarea">
+      <label class="visually-hidden" for="your-email">Сообщение клиента</label>
+        <textarea class="modal-textarea" id="your-message" placeholder="Напишите что-нибудь..."></textarea>
+    </p>
+    <div class="modal-feedback-button">
+      <button class="modal-button" type="submit">
+        Отправить
+      </button>
+    </div>
+  </form>
 
 </body>
 
