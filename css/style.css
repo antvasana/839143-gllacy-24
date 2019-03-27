@@ -100,6 +100,10 @@ input[type="radio"].visually-hidden {
   z-index: 1;
 }
 
+.main-header-logo {
+  margin-top: 10px;
+}
+
 .main-navigation {
   position: relative;
 
@@ -169,8 +173,8 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 250px;
-  margin-top: 13px;
+  width: 253px;
+  margin-top: 23px;
   margin-bottom: 0;
 
   font-size: 14px;
@@ -236,8 +240,9 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .purchase-navigation {
   position: relative;
-  padding: 10px;
+  padding: 8px;
   padding-left: 42px;
+  padding-right: 17px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
@@ -269,8 +274,9 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .purchase-done-navigation {
   position: relative;
-  padding: 9px;
+  padding: 8px;
   padding-left: 42px;
+  padding-right: 17px;
 
   color: #323232;
   background-color: #f8f7f4;
@@ -961,7 +967,7 @@ input[type="password"]::-moz-placeholder {
 
 .schedule {
   position: absolute;
-  top: 60px;
+  top: 71px;
   right: 27px;
 
   display: flex;
@@ -970,7 +976,8 @@ input[type="password"]::-moz-placeholder {
   width: 166px;
 
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
+  text-align: right;
 }
 
 .schedule .schedule-hour {
@@ -991,7 +998,7 @@ input[type="password"]::-moz-placeholder {
 .slider {
   position: relative;
 
-  padding-top: 321px;
+  padding-top: 311px;
 
   text-align: center;
   color: #ffffff;
@@ -1011,7 +1018,7 @@ input[type="password"]::-moz-placeholder {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 
   font-size: 60px;
   line-height: 60px;
@@ -1052,7 +1059,7 @@ input[type="password"]::-moz-placeholder {
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
+  bottom: 19px;
   left: 0;
   z-index: 20;
 
@@ -1461,6 +1468,7 @@ opacity: 0.5;
 
 .promotion .raspberry-free, .promotion .chocolate-free {
   margin: 0;
+  padding: 15px 20px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1486,12 +1494,7 @@ opacity: 0.5;
 
 .promotion-raspberry .special-offer {
   margin-bottom: 43px;
-  padding-right: 30px;
-}
-
-.promotion-chocolate .special-offer {
-  margin-bottom: 40px;
-  padding-right: 27px;
+  padding-right: 20px;
 }
 
 .promotion a {
@@ -1714,7 +1717,8 @@ opacity: 0.5;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-left: 46px;
 
   line-height: 22px;
   font-weight: normal;
@@ -1728,21 +1732,18 @@ opacity: 0.5;
 
 .features-list .feature-item:nth-child(2n+1) {
   width: 480px;
+  margin-right: 30px;
 }
 
-.technology {
+.feature-item p {
+  margin-bottom: 13px;
+  }
+
+.technology, .buying-ingredients {
   margin-top: 23px;
-}
+}.buying-ingredients
 
-.buying-ingredients {
-  margin-top: 23px;
-}
-
-.products {
-  margin-top: 8px;
-}
-
-.delivery {
+.products, .delivery {
   margin-top: 8px;
 }
 
@@ -1863,7 +1864,7 @@ opacity: 0.5;
 .mail-background {
   position: relative;
   padding: 4px 8px 3px;
-  width: 552px;
+  width: 544px;
 
   border-radius: 10px;
   background-image: url("../img/mail-background.jpg");
@@ -1968,7 +1969,6 @@ opacity: 0.5;
 
 .map {
   margin: 0 auto;
-  margin-bottom: 18px;
   max-width: 100%;
 
   background-image: url("../img/map-background.jpg");
@@ -1983,7 +1983,7 @@ opacity: 0.5;
 
   width: 1146px;
   margin: 0 auto;
-  padding: 61px 0 40px 0;
+  padding: 61px 0 66px 0;
 
 }
 
@@ -2029,7 +2029,7 @@ opacity: 0.5;
 
 .address-announcement {
   margin: 0;
-  padding: 32px 129px 5px 25px;
+  padding: 32px 129px 0px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -2056,7 +2056,7 @@ opacity: 0.5;
 
 .phone-schedule {
   margin: 0;
-  padding: 6px 120px 0px 25px;
+  padding: 6px 120px 5px 25px;
 
   font-size: 14px;
   line-height: 20px;
@@ -2087,7 +2087,7 @@ opacity: 0.5;
 
 .address .feedback-button {
   margin-left: 25px;
-  margin-top: 13px;
+  margin-top: 26px;
   margin-bottom: 26px;
   padding: 10px 28px 12px;
   border: none;
@@ -2194,6 +2194,7 @@ opacity: 0.5;
 .main-footer {
   display: flex;
   justify-content: space-between;
+  padding-top: 18px;
 }
 
 .main-footer a {
@@ -2212,7 +2213,7 @@ opacity: 0.5;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 7px;
+  margin-top: 15px;
 }
 
 .footer-social .social-icon {
@@ -2237,6 +2238,8 @@ opacity: 0.5;
 
 .footer-info {
   width: 331px;
+  margin-right: 21px;
+  margin-top: 13px;
 
   font-size: 13px;
   line-height: 18px;
