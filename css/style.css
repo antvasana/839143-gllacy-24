@@ -122,8 +122,9 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  width: 355px;
-  margin-top: 15px;
+  width: 371px;
+  margin-top: 23px;
+  margin-left: 12px;
   margin-right: auto;
 }
 
