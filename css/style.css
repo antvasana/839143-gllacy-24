@@ -302,6 +302,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/svg-gllacy/basket-red.svg");
 }
 
+.inner-page .user-navigation {
+  width: 270px;
+  }
+
+  p.products {
+    margin-top: 8px;
+  }
+
 .modal {
   color: #323232;
   background-color: #f8f7f4;
@@ -1315,11 +1323,11 @@ input[type="password"]::-moz-placeholder {
 }
 
 .filter-fat-radio .filter-option {
-  padding: 11px 3px 12px 45px;
+  padding: 7px 3px 11px 45px;
 }
 
 .filter-fillers-checkbox .filter-option {
-  padding: 9px 3px 12px 45px;
+  padding: 10px 9px 8px 45px;
 }
 
 .filter-fat-radio .filter-option:last-child,
@@ -1475,16 +1483,9 @@ opacity: 0.5;
   font-weight: bold;
 }
 
-.promotion .raspberry-free {
-  padding: 15px 267px 10px 20px;
-}
-
-.promotion .chocolate-free {
-  padding: 15px 223px 15px 20px;
-}
-
 .promotion .special-offer {
   margin-top: 0;
+  margin-bottom: 43px;
   padding-left: 20px;
 
   font-size: 18px;
@@ -1540,7 +1541,7 @@ opacity: 0.5;
 
 .main-ice-cream {
   margin-top: 40px;
-  margin-bottom: 52px;
+  margin-bottom: 38px;
 }
 
 .best-choice .ice-cream, .main-ice-cream .ice-cream {
@@ -1586,6 +1587,7 @@ opacity: 0.5;
 }
 
 .best-choice, .main-ice-cream {
+  margin-bottom: 4px;
   font-size: 45px;
   line-height: 45px;
 }
@@ -1599,7 +1601,7 @@ opacity: 0.5;
   position: relative;
   z-index: 30;
 
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
 .best-choice .ice-cream::before {
@@ -2114,13 +2116,10 @@ opacity: 0.5;
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.pagination-list {
-  margin-bottom: 30px;
-}
-
 .pagination-list .pagination {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 11px;
 
   list-style: none;
 }
