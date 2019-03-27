@@ -54,11 +54,13 @@
             <form class="modal modal-login" action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label class="visually-hidden" for="modal-email">Электронная почта</label>
-                <input class="login-modal-email" id="modal-email" type="email" name="login" placeholder="Электронная почта">
+                <input class="login-modal-email" id="modal-email" type="email" name="login"
+                  placeholder="Электронная почта">
               </p>
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-modal-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                <input class="login-modal-password" id="user-password" type="password" name="password"
+                  placeholder="Пароль">
               </p>
               <div class="login-help">
                 <button class="login-button" type="submit">
@@ -121,7 +123,8 @@
         </div>
         <div class="promotion-chocolate">
           <h2 class="chocolate-free">Шоколадки даром!</h2>
-          <p class="special-offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
+          <p class="special-offer">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+            присыпки
             совершенно бесплатно.
           </p>
           <a href="#">Хочу шоколадки!</a>
@@ -174,11 +177,13 @@
               современного оборудования и проверенных временем технологий.</p>
           </li>
           <li class="feature-item">
-            <p class="buying-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с
+            <p class="buying-ingredients">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+              компаний, с
               которыми нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="feature-item">
-            <p class="products">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+            <p class="products">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+              качества.
               Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="feature-item">
@@ -268,10 +273,14 @@
           </a>
         </div>
         <div class="footer-info">
-          <a href="#">Для поставщиков</a>
-          <a href="#">Наши документы</a>
-          <a href="#">О производстве</a>
-          <a href="#">Экологические стандарты</a>
+          <div>
+            <a class="supply" href="#">Для поставщиков</a>
+            <a class="elaboration" href="#">О производстве</a>
+          </div>
+          <div>
+            <a class="documents" href="#">Наши документы</a>
+            <a class="eco-standards" href="#">Экологические стандарты</a>
+          </div>
         </div>
         <div class="footer-copyright">
           <img src="img/svg-gllacy/logo-htmlacademy.svg" width="116" height="40" alt="Логотип HTML-Академии">
@@ -284,21 +293,22 @@
 
   </div>
 
+
   <!--Форма обратной связи-->
   <form class="modal modal-feedback" action="https://echo.htmlacademy.ru" method="post">
     <button class="modal-close" type="button">Закрыть</button>
     <h2 class="modal-answer">Мы обязательно вам ответим!</h2>
     <p>
       <label class="visually-hidden" for="your-name">Имя</label>
-      <input class="login-name-user" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
+      <input class="login" id="your-name" type="text" name="login" placeholder="Как вас зовут?">
     </p>
     <p>
       <label class="visually-hidden" for="your-email">Ваша почта для ответа?</label>
-      <input class="login-name-user" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+      <input class="email" id="your-email" type="email" name="email" placeholder="Ваша почта для ответа?">
     </p>
     <p class="modal-feedback-textarea">
       <label class="visually-hidden" for="your-email">Сообщение клиента</label>
-        <textarea class="modal-textarea" id="your-message" placeholder="Напишите что-нибудь..."></textarea>
+      <textarea class="modal-textarea" id="your-message" placeholder="Напишите что-нибудь..."></textarea>
     </p>
     <div class="modal-feedback-button">
       <button class="modal-button" type="submit">
@@ -306,6 +316,98 @@
       </button>
     </div>
   </form>
+  <div class="modal-overlay"></div>
+
+  <script>
+    var link = document.querySelector(".feedback-button");
+
+    var popup = document.querySelector(".modal-feedback");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector("form");
+    var login = popup.querySelector("[name=login]");
+    var email = popup.querySelector("[name=email]");
+
+    var overlay = document.querySelector(".modal-overlay");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+      storage = localStorage.getItem("login");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+      if (storage) {
+        login.value = storage;
+        password.focus();
+      } else {
+        login.focus();
+      }
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+      login.focus();
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!login.value || !password.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        console.log("Нужно ввести логин и пароль");
+        popup.classList.add("modal-error"); popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("login", login.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+        }
+      }
+    });
+  </script>
+  <script src="../js/script.js"></script>
+
+
+  <!--Форма обратной связи-->
+  <div class="feedback">
+    <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="feedback-form" action="#" method="post">
+      <div class="placeholder">
+        <input class="name textfield" type="text" name="feedback-name" id="name-id">
+        <label class="paceholder-label" for="name-id">Как вас зовут?</label>
+      </div>
+      <div class="placeholder">
+        <input class="e-mail textfield" type="email" name="feedback-email" id="id-email">
+        <label class="paceholder-label" for="id-email">Ваша почта для ответа?</label>
+      </div>
+      <div class="placeholder">
+        <textarea class="commit textfield" name="commit-field" id="textarea-id" rows="6" cols="48"></textarea>
+        <label class="paceholder-label" for="id-email">Напишите что-нибудь...</label>
+      </div>
+      <input class="btn btn-send" type="submit" name="feedback" value="Отправить">
+    </form>
+  </div>
+  <div class="modal-overlay"></div>
+  <script src="../js/script.js"></script>
+
 
 </body>
 
