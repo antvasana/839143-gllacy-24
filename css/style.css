@@ -118,18 +118,13 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-  content: "";
-
-  position: absolute;
-  left: 165px;
-
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   width: 355px;
   margin-top: 15px;
-  /*margin-right: auto;*/
+  margin-right: auto;
 }
 
 .site-navigation .catalog {
@@ -576,7 +571,7 @@ input[type="password"]::-moz-placeholder {
   position: fixed;
   top: 120px;
   left: 50%;
-  z-index: 10;
+  z-index: 30;
 
   display: none;
   width: 437px;
@@ -1175,7 +1170,7 @@ input[type="password"]::-moz-placeholder {
 .filter-sorting::after {
   content: "";
   position: absolute;
-  top: 13px;
+  bottom: 17px;
   right: 20px;
 
   width: 11px;
