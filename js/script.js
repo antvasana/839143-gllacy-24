@@ -1,6 +1,6 @@
 var link = document.querySelector(".btn-form");
 var popup = document.querySelector(".feedback");
-var overlay = document.querySelector(".modal-overlay");
+var overlay = document.querySelector(".modal-overlay")
 var close = document.querySelector(".feedback-close");
 var feedbackForm = document.querySelector(".feedback-form");
 var name = document.querySelector("[name=name]");

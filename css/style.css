@@ -57,8 +57,6 @@ body, .inner-page {
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
   font-weight: 500;
   color: #ffffff;
   background-color: #849d8f;
@@ -1606,14 +1604,11 @@ opacity: 0.5;
 }
 
 .promotion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 41px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .promotion .promotion-raspberry, .promotion .promotion-chocolate {
@@ -1751,6 +1746,7 @@ opacity: 0.5;
 }
 
 .best-choice a, .main-ice-cream a {
+  margin-top: 6px;
   font-size: 16px;
   line-height: 22px;
 
@@ -1786,8 +1782,7 @@ opacity: 0.5;
   position: relative;
   z-index: 30;
 
-  margin-bottom: 46px;
-  padding: 5px;
+  margin-bottom: 0;
 }
 
 .best-choice .ice-cream::before {
@@ -1822,8 +1817,15 @@ opacity: 0.5;
 
 .ice-cream .price {
   position: absolute;
-  bottom: 60px;
+  top: 205px;
 
+  text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+ice-cream .price {
+  position: absolute;
+  top: 175px;
+  left: -25px;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -2494,8 +2496,8 @@ opacity: 0.5;
 .footer-info {
   display: flex;
   width: 331px;
-  margin-right: 21px;
   margin-top: 13px;
+  margin-left: 22px;
 
   font-size: 13px;
   line-height: 18px;
@@ -2504,6 +2506,10 @@ opacity: 0.5;
 .footer-info a {
   display: inline-block;
   vertical-align: middle;
+}
+
+.footer-info a:first-child {
+ margin-bottom: 5px;
 }
 
 .footer-info .supply {
@@ -2526,19 +2532,6 @@ opacity: 0.5;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
-/*.footer-info a:nth-child(2) {
-  margin-bottom: 9px;
-}
-
-.footer-info a:nth-child(3) {
-  margin-right: 44px;
-  padding-left: 22px;
-}
-
-.inner-page .footer-info a:nth-child(3) {
-  margin-right: 35px;
-}*/
 
 .footer-copyright .copyright {
   margin-top: 0;
