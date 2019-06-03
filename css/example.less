@@ -1,0 +1,39 @@
+.intro__description {
+  position: relative;
+}
+.intro__description::after {
+  content: "";
+
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+
+  width: 320px;
+  height: 37px;
+
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+******************************
+Приведенный выше код надо представить в такой форме:
+.intro__description {
+  position: relative;
+
+  &-triangle {
+    content: "";
+
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+
+    width: 320px;
+    height: 37px;
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+}
+
+

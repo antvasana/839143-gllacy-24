@@ -1611,7 +1611,8 @@ opacity: 0.5;
   margin-bottom: 37px;
 }
 
-.promotion .promotion-raspberry, .promotion .promotion-chocolate {
+.promotion .promotion-raspberry, 
+.promotion .promotion-chocolate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
